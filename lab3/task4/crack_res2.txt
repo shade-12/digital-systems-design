@@ -1,0 +1,16 @@
+@0000 4C 54 68 65 20 73 6B 79 20 61 62 6F 76 65 20 74
+@0010 68 65 20 70 6F 72 74 20 77 61 73 20 74 68 65 20
+@0020 63 6F 6C 6F 72 20 6F 66 20 74 65 6C 65 76 69 73
+@0030 69 6F 6E 2C 20 74 75 6E 65 64 20 74 6F 20 61 20
+@0040 64 65 61 64 20 63 68 61 6E 6E 65 6C 2E xx xx xx
+@0050 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@0060 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@0070 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@0080 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@0090 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@00a0 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@00b0 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@00c0 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@00d0 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@00e0 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+@00f0 xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
