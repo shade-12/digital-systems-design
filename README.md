@@ -7,3 +7,9 @@
 3. [Lab 2](https://github.com/shade-12/digital-systems-design/tree/main/lab2) - Circles and Triangles
 5. [Lab 3](https://github.com/shade-12/digital-systems-design/tree/main/lab3) - Memories from Room 40
 6. [Lab 4](https://github.com/shade-12/digital-systems-design/tree/main/lab4) - Deep Neural Networks on FPGA
+
+
+### Midterms
+1. [Midterm 1](https://github.com/shade-12/digital-systems-design/tree/main/midterm1)
+2. [Midterm 2](https://github.com/shade-12/digital-systems-design/tree/main/midterm2)
+3. [Midterm 3](https://github.com/shade-12/digital-systems-design/tree/main/midterm3)
