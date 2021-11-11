@@ -1,0 +1,68 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 07:10:36 on Nov 19,2020
+vlog -l doublecrack.rtl-vlog.rpt -sv "+acc=rnp" doublecrack_ag.sv arc4.sv crack.sv doublecrack.sv init.sv ksa.sv prga.sv seg7.sv task5.sv memories/s_mem.v memories/pt_mem.v memories/ct_mem.v 
+-- Compiling module doublecrack_ag
+-- Compiling module arc4
+-- Compiling module crack
+-- Compiling module doublecrack
+-- Compiling module init
+-- Compiling module ksa
+-- Compiling module prga
+-- Compiling module seg7
+-- Compiling module task5
+-- Compiling module s_mem
+-- Compiling module pt_mem
+-- Compiling module ct_mem
+
+Top level modules:
+	doublecrack_ag
+	task5
+End time: 07:10:36 on Nov 19,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l doublecrack.rtl-vsim.rpt -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -c -do "vcd file doublecrack.rtl.vcd;vcd add -r /doublecrack_ag/dut/*;run -all;quit" doublecrack_ag 
+# Start time: 07:10:38 on Nov 19,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.doublecrack_ag(fast)
+# Loading work.doublecrack(fast)
+# Loading work.pt_mem(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram_body(fast)
+# Loading work.crack(fast)
+# Loading work.arc4(fast)
+# Loading work.s_mem(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram(fast__1)
+# Loading work.init(fast)
+# Loading work.ksa(fast)
+# Loading work.prga(fast)
+# vcd file doublecrack.rtl.vcd
+# vcd add -r /doublecrack_ag/dut/*
+# run -all
+# msg: DUT: task5.sv. Expectation: key_valid asserted.
+# PASSED at t=8079
+# msg: DUT: task5.sv. Expectation: expected key found 2x faster. (Found in 2783 cycles)
+# PASSED at t=8079
+# ** Note: $stop    : doublecrack_ag.sv(177)
+#    Time: 8079 ps  Iteration: 1  Instance: /doublecrack_ag
+# Break at doublecrack_ag.sv line 177
+# Stopped at doublecrack_ag.sv line 177
+# quit
+# End time: 07:10:41 on Nov 19,2020, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

@@ -1,0 +1,120 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 07:10:19 on Nov 19,2020
+vlog -l task3.rtl-vlog.rpt -sv "+acc=rnp" task3_ag.sv arc4.sv init.sv ksa.sv prga.sv task3.sv memories/s_mem.v memories/pt_mem.v memories/ct_mem.v 
+-- Compiling module task3_ag
+-- Compiling module arc4
+-- Compiling module init
+-- Compiling module ksa
+-- Compiling module prga
+-- Compiling module task3
+-- Compiling module s_mem
+-- Compiling module pt_mem
+-- Compiling module ct_mem
+
+Top level modules:
+	task3_ag
+End time: 07:10:20 on Nov 19,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l task3.rtl-vsim.rpt -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -c -do "vcd file task3.rtl.vcd;vcd add -r /task3_ag/dut/*;run -all;quit" task3_ag 
+# Start time: 07:10:22 on Nov 19,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.task3_ag(fast)
+# Loading work.task3(fast)
+# Loading work.ct_mem(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.ALTERA_DEVICE_FAMILIES(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.pt_mem(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram(fast__1)
+# Loading work.arc4(fast)
+# Loading work.s_mem(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram(fast__2)
+# Loading work.init(fast)
+# Loading work.ksa(fast)
+# Loading work.prga(fast)
+# vcd file task3.rtl.vcd
+# vcd add -r /task3_ag/dut/*
+# run -all
+# Message Length:  53
+# Signal:  53
+# Received M, Expected M
+# Received r, Expected r
+# Received s, Expected s
+# Received ., Expected .
+# Received  , Expected  
+# Received D, Expected D
+# Received a, Expected a
+# Received l, Expected l
+# Received l, Expected l
+# Received o, Expected o
+# Received w, Expected w
+# Received a, Expected a
+# Received y, Expected y
+# Received  , Expected  
+# Received s, Expected s
+# Received a, Expected a
+# Received i, Expected i
+# Received d, Expected d
+# Received  , Expected  
+# Received s, Expected s
+# Received h, Expected h
+# Received e, Expected e
+# Received  , Expected  
+# Received w, Expected w
+# Received o, Expected o
+# Received u, Expected u
+# Received l, Expected l
+# Received d, Expected d
+# Received  , Expected  
+# Received b, Expected b
+# Received u, Expected u
+# Received y, Expected y
+# Received  , Expected  
+# Received t, Expected t
+# Received h, Expected h
+# Received e, Expected e
+# Received  , Expected  
+# Received f, Expected f
+# Received l, Expected l
+# Received o, Expected o
+# Received w, Expected w
+# Received e, Expected e
+# Received r, Expected r
+# Received s, Expected s
+# Received  , Expected  
+# Received h, Expected h
+# Received e, Expected e
+# Received r, Expected r
+# Received s, Expected s
+# Received e, Expected e
+# Received l, Expected l
+# Received f, Expected f
+# Received ., Expected .
+# Received  , Expected  
+# msg: DUT: task3.sv. Expectation: prga results as expected. Actual:         53/ 53 matching
+# PASSED at t=10015
+# ** Note: $stop    : task3_ag.sv(162)
+#    Time: 10015 ps  Iteration: 1  Instance: /task3_ag
+# Break at task3_ag.sv line 162
+# Stopped at task3_ag.sv line 162
+# quit
+# End time: 07:10:25 on Nov 19,2020, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

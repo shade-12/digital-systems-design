@@ -1,0 +1,310 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 07:09:51 on Nov 19,2020
+vlog -l task2.rtl-vlog.rpt -sv "+acc=rnp" task2_ag.sv init.sv ksa.sv task2.sv memories/s_mem.v memories/pt_mem.v 
+-- Compiling module task2_ag
+-- Compiling module init
+-- Compiling module ksa
+-- Compiling module task2
+-- Compiling module s_mem
+-- Compiling module pt_mem
+
+Top level modules:
+	task2_ag
+	pt_mem
+End time: 07:09:51 on Nov 19,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l task2.rtl-vsim.rpt -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -c -do "vcd file task2.rtl.vcd;vcd add -r /task2_ag/dut/*;run -all;quit" task2_ag 
+# Start time: 07:09:54 on Nov 19,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.task2_ag(fast)
+# Loading work.task2(fast)
+# Loading work.init(fast)
+# Loading work.ksa(fast)
+# Loading work.s_mem(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram(fast)
+# vcd file task2.rtl.vcd
+# vcd add -r /task2_ag/dut/*
+# run -all
+# addr   0 Expected 0x0b4, received 0xb4
+# addr   1 Expected 0x004, received 0x04
+# addr   2 Expected 0x02b, received 0x2b
+# addr   3 Expected 0x0e5, received 0xe5
+# addr   4 Expected 0x049, received 0x49
+# addr   5 Expected 0x00a, received 0x0a
+# addr   6 Expected 0x090, received 0x90
+# addr   7 Expected 0x09a, received 0x9a
+# addr   8 Expected 0x0e4, received 0xe4
+# addr   9 Expected 0x017, received 0x17
+# addr  10 Expected 0x0f4, received 0xf4
+# addr  11 Expected 0x010, received 0x10
+# addr  12 Expected 0x03a, received 0x3a
+# addr  13 Expected 0x036, received 0x36
+# addr  14 Expected 0x013, received 0x13
+# addr  15 Expected 0x077, received 0x77
+# addr  16 Expected 0x011, received 0x11
+# addr  17 Expected 0x0c4, received 0xc4
+# addr  18 Expected 0x0bc, received 0xbc
+# addr  19 Expected 0x038, received 0x38
+# addr  20 Expected 0x04f, received 0x4f
+# addr  21 Expected 0x06d, received 0x6d
+# addr  22 Expected 0x098, received 0x98
+# addr  23 Expected 0x006, received 0x06
+# addr  24 Expected 0x06e, received 0x6e
+# addr  25 Expected 0x03d, received 0x3d
+# addr  26 Expected 0x02c, received 0x2c
+# addr  27 Expected 0x0ae, received 0xae
+# addr  28 Expected 0x0cd, received 0xcd
+# addr  29 Expected 0x026, received 0x26
+# addr  30 Expected 0x040, received 0x40
+# addr  31 Expected 0x0a2, received 0xa2
+# addr  32 Expected 0x0c2, received 0xc2
+# addr  33 Expected 0x0da, received 0xda
+# addr  34 Expected 0x067, received 0x67
+# addr  35 Expected 0x068, received 0x68
+# addr  36 Expected 0x05d, received 0x5d
+# addr  37 Expected 0x03e, received 0x3e
+# addr  38 Expected 0x002, received 0x02
+# addr  39 Expected 0x073, received 0x73
+# addr  40 Expected 0x003, received 0x03
+# addr  41 Expected 0x0aa, received 0xaa
+# addr  42 Expected 0x094, received 0x94
+# addr  43 Expected 0x069, received 0x69
+# addr  44 Expected 0x06a, received 0x6a
+# addr  45 Expected 0x097, received 0x97
+# addr  46 Expected 0x06f, received 0x6f
+# addr  47 Expected 0x033, received 0x33
+# addr  48 Expected 0x063, received 0x63
+# addr  49 Expected 0x05b, received 0x5b
+# addr  50 Expected 0x08a, received 0x8a
+# addr  51 Expected 0x058, received 0x58
+# addr  52 Expected 0x0d9, received 0xd9
+# addr  53 Expected 0x061, received 0x61
+# addr  54 Expected 0x0f5, received 0xf5
+# addr  55 Expected 0x046, received 0x46
+# addr  56 Expected 0x096, received 0x96
+# addr  57 Expected 0x055, received 0x55
+# addr  58 Expected 0x07d, received 0x7d
+# addr  59 Expected 0x053, received 0x53
+# addr  60 Expected 0x05f, received 0x5f
+# addr  61 Expected 0x0ab, received 0xab
+# addr  62 Expected 0x007, received 0x07
+# addr  63 Expected 0x09c, received 0x9c
+# addr  64 Expected 0x0a7, received 0xa7
+# addr  65 Expected 0x072, received 0x72
+# addr  66 Expected 0x031, received 0x31
+# addr  67 Expected 0x0a9, received 0xa9
+# addr  68 Expected 0x0c6, received 0xc6
+# addr  69 Expected 0x03f, received 0x3f
+# addr  70 Expected 0x0f9, received 0xf9
+# addr  71 Expected 0x091, received 0x91
+# addr  72 Expected 0x0f2, received 0xf2
+# addr  73 Expected 0x0f6, received 0xf6
+# addr  74 Expected 0x07c, received 0x7c
+# addr  75 Expected 0x0c7, received 0xc7
+# addr  76 Expected 0x0b3, received 0xb3
+# addr  77 Expected 0x01d, received 0x1d
+# addr  78 Expected 0x020, received 0x20
+# addr  79 Expected 0x088, received 0x88
+# addr  80 Expected 0x0a0, received 0xa0
+# addr  81 Expected 0x0ba, received 0xba
+# addr  82 Expected 0x00c, received 0x0c
+# addr  83 Expected 0x085, received 0x85
+# addr  84 Expected 0x0e1, received 0xe1
+# addr  85 Expected 0x0cf, received 0xcf
+# addr  86 Expected 0x0cb, received 0xcb
+# addr  87 Expected 0x051, received 0x51
+# addr  88 Expected 0x0c0, received 0xc0
+# addr  89 Expected 0x02e, received 0x2e
+# addr  90 Expected 0x0ef, received 0xef
+# addr  91 Expected 0x080, received 0x80
+# addr  92 Expected 0x076, received 0x76
+# addr  93 Expected 0x0b2, received 0xb2
+# addr  94 Expected 0x0d6, received 0xd6
+# addr  95 Expected 0x071, received 0x71
+# addr  96 Expected 0x024, received 0x24
+# addr  97 Expected 0x0ad, received 0xad
+# addr  98 Expected 0x06b, received 0x6b
+# addr  99 Expected 0x0db, received 0xdb
+# addr 100 Expected 0x0ff, received 0xff
+# addr 101 Expected 0x0fe, received 0xfe
+# addr 102 Expected 0x0ed, received 0xed
+# addr 103 Expected 0x084, received 0x84
+# addr 104 Expected 0x04e, received 0x4e
+# addr 105 Expected 0x08c, received 0x8c
+# addr 106 Expected 0x0bb, received 0xbb
+# addr 107 Expected 0x0d3, received 0xd3
+# addr 108 Expected 0x0a5, received 0xa5
+# addr 109 Expected 0x02f, received 0x2f
+# addr 110 Expected 0x0be, received 0xbe
+# addr 111 Expected 0x0c8, received 0xc8
+# addr 112 Expected 0x00e, received 0x0e
+# addr 113 Expected 0x08f, received 0x8f
+# addr 114 Expected 0x0d1, received 0xd1
+# addr 115 Expected 0x0a6, received 0xa6
+# addr 116 Expected 0x086, received 0x86
+# addr 117 Expected 0x0e3, received 0xe3
+# addr 118 Expected 0x062, received 0x62
+# addr 119 Expected 0x0b0, received 0xb0
+# addr 120 Expected 0x087, received 0x87
+# addr 121 Expected 0x0ec, received 0xec
+# addr 122 Expected 0x0b9, received 0xb9
+# addr 123 Expected 0x078, received 0x78
+# addr 124 Expected 0x081, received 0x81
+# addr 125 Expected 0x0e0, received 0xe0
+# addr 126 Expected 0x04d, received 0x4d
+# addr 127 Expected 0x05a, received 0x5a
+# addr 128 Expected 0x07a, received 0x7a
+# addr 129 Expected 0x079, received 0x79
+# addr 130 Expected 0x014, received 0x14
+# addr 131 Expected 0x029, received 0x29
+# addr 132 Expected 0x056, received 0x56
+# addr 133 Expected 0x0e8, received 0xe8
+# addr 134 Expected 0x04a, received 0x4a
+# addr 135 Expected 0x08e, received 0x8e
+# addr 136 Expected 0x018, received 0x18
+# addr 137 Expected 0x0c5, received 0xc5
+# addr 138 Expected 0x0ca, received 0xca
+# addr 139 Expected 0x0b7, received 0xb7
+# addr 140 Expected 0x025, received 0x25
+# addr 141 Expected 0x0de, received 0xde
+# addr 142 Expected 0x099, received 0x99
+# addr 143 Expected 0x0c3, received 0xc3
+# addr 144 Expected 0x02a, received 0x2a
+# addr 145 Expected 0x065, received 0x65
+# addr 146 Expected 0x030, received 0x30
+# addr 147 Expected 0x01a, received 0x1a
+# addr 148 Expected 0x0ea, received 0xea
+# addr 149 Expected 0x0fb, received 0xfb
+# addr 150 Expected 0x0a1, received 0xa1
+# addr 151 Expected 0x089, received 0x89
+# addr 152 Expected 0x035, received 0x35
+# addr 153 Expected 0x0a4, received 0xa4
+# addr 154 Expected 0x009, received 0x09
+# addr 155 Expected 0x0a3, received 0xa3
+# addr 156 Expected 0x0c1, received 0xc1
+# addr 157 Expected 0x0d8, received 0xd8
+# addr 158 Expected 0x02d, received 0x2d
+# addr 159 Expected 0x0b8, received 0xb8
+# addr 160 Expected 0x060, received 0x60
+# addr 161 Expected 0x047, received 0x47
+# addr 162 Expected 0x039, received 0x39
+# addr 163 Expected 0x0bd, received 0xbd
+# addr 164 Expected 0x01f, received 0x1f
+# addr 165 Expected 0x005, received 0x05
+# addr 166 Expected 0x05e, received 0x5e
+# addr 167 Expected 0x043, received 0x43
+# addr 168 Expected 0x0b1, received 0xb1
+# addr 169 Expected 0x0dd, received 0xdd
+# addr 170 Expected 0x0e9, received 0xe9
+# addr 171 Expected 0x01c, received 0x1c
+# addr 172 Expected 0x0af, received 0xaf
+# addr 173 Expected 0x09b, received 0x9b
+# addr 174 Expected 0x0fa, received 0xfa
+# addr 175 Expected 0x001, received 0x01
+# addr 176 Expected 0x0f7, received 0xf7
+# addr 177 Expected 0x008, received 0x08
+# addr 178 Expected 0x075, received 0x75
+# addr 179 Expected 0x0b6, received 0xb6
+# addr 180 Expected 0x082, received 0x82
+# addr 181 Expected 0x0ce, received 0xce
+# addr 182 Expected 0x042, received 0x42
+# addr 183 Expected 0x0e2, received 0xe2
+# addr 184 Expected 0x0cc, received 0xcc
+# addr 185 Expected 0x09e, received 0x9e
+# addr 186 Expected 0x0eb, received 0xeb
+# addr 187 Expected 0x027, received 0x27
+# addr 188 Expected 0x022, received 0x22
+# addr 189 Expected 0x0df, received 0xdf
+# addr 190 Expected 0x0bf, received 0xbf
+# addr 191 Expected 0x0fc, received 0xfc
+# addr 192 Expected 0x00d, received 0x0d
+# addr 193 Expected 0x0d0, received 0xd0
+# addr 194 Expected 0x095, received 0x95
+# addr 195 Expected 0x023, received 0x23
+# addr 196 Expected 0x0d2, received 0xd2
+# addr 197 Expected 0x0a8, received 0xa8
+# addr 198 Expected 0x07e, received 0x7e
+# addr 199 Expected 0x074, received 0x74
+# addr 200 Expected 0x04c, received 0x4c
+# addr 201 Expected 0x0d7, received 0xd7
+# addr 202 Expected 0x012, received 0x12
+# addr 203 Expected 0x07f, received 0x7f
+# addr 204 Expected 0x0fd, received 0xfd
+# addr 205 Expected 0x083, received 0x83
+# addr 206 Expected 0x01e, received 0x1e
+# addr 207 Expected 0x028, received 0x28
+# addr 208 Expected 0x064, received 0x64
+# addr 209 Expected 0x054, received 0x54
+# addr 210 Expected 0x03c, received 0x3c
+# addr 211 Expected 0x021, received 0x21
+# addr 212 Expected 0x0dc, received 0xdc
+# addr 213 Expected 0x0f3, received 0xf3
+# addr 214 Expected 0x093, received 0x93
+# addr 215 Expected 0x059, received 0x59
+# addr 216 Expected 0x08b, received 0x8b
+# addr 217 Expected 0x07b, received 0x7b
+# addr 218 Expected 0x000, received 0x00
+# addr 219 Expected 0x048, received 0x48
+# addr 220 Expected 0x0e7, received 0xe7
+# addr 221 Expected 0x06c, received 0x6c
+# addr 222 Expected 0x0d5, received 0xd5
+# addr 223 Expected 0x0c9, received 0xc9
+# addr 224 Expected 0x070, received 0x70
+# addr 225 Expected 0x09f, received 0x9f
+# addr 226 Expected 0x0ac, received 0xac
+# addr 227 Expected 0x041, received 0x41
+# addr 228 Expected 0x00b, received 0x0b
+# addr 229 Expected 0x0f0, received 0xf0
+# addr 230 Expected 0x019, received 0x19
+# addr 231 Expected 0x0b5, received 0xb5
+# addr 232 Expected 0x08d, received 0x8d
+# addr 233 Expected 0x016, received 0x16
+# addr 234 Expected 0x0d4, received 0xd4
+# addr 235 Expected 0x0f1, received 0xf1
+# addr 236 Expected 0x092, received 0x92
+# addr 237 Expected 0x09d, received 0x9d
+# addr 238 Expected 0x066, received 0x66
+# addr 239 Expected 0x044, received 0x44
+# addr 240 Expected 0x04b, received 0x4b
+# addr 241 Expected 0x015, received 0x15
+# addr 242 Expected 0x045, received 0x45
+# addr 243 Expected 0x0f8, received 0xf8
+# addr 244 Expected 0x00f, received 0x0f
+# addr 245 Expected 0x057, received 0x57
+# addr 246 Expected 0x034, received 0x34
+# addr 247 Expected 0x032, received 0x32
+# addr 248 Expected 0x050, received 0x50
+# addr 249 Expected 0x052, received 0x52
+# addr 250 Expected 0x0ee, received 0xee
+# addr 251 Expected 0x03b, received 0x3b
+# addr 252 Expected 0x05c, received 0x5c
+# addr 253 Expected 0x037, received 0x37
+# addr 254 Expected 0x0e6, received 0xe6
+# addr 255 Expected 0x01b, received 0x1b
+# msg: DUT: task2.sv. Expectation: key scheduling algorithm result matches expected. Actual:         256/256 matching autograder
+# PASSED at t=6159
+# ** Note: $stop    : task2_ag.sv(110)
+#    Time: 6159 ps  Iteration: 1  Instance: /task2_ag
+# Break at task2_ag.sv line 110
+# Stopped at task2_ag.sv line 110
+# quit
+# End time: 07:10:06 on Nov 19,2020, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0

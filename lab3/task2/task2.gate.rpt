@@ -1,0 +1,523 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 10:25:34 on Nov 17,2020
+vlog -l task2.gate-vlog.rpt -sv "+define+AG_NETLIST" "+acc=rnp" task2_ag.sv simulation/modelsim/task2.vo memories/s_mem.v memories/pt_mem.v 
+-- Compiling module task2_ag
+-- Compiling module task2
+-- Compiling module s_mem
+-- Compiling module pt_mem
+
+Top level modules:
+	task2_ag
+	s_mem
+	pt_mem
+End time: 10:25:35 on Nov 17,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l task2.gate-vsim.rpt -t 1ps -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev -c -do "vcd file task2.gate.vcd;vcd add -r /task2_ag/dut/*;run -all;quit" task2_ag 
+# Start time: 10:25:37 on Nov 17,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2685) [TFMPC] - Too few port connections for 'altera_internal_jtag'.  Expected 21, found 14.
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2718) [TFMPC] - Missing connection for port 'tdocore'.
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2718) [TFMPC] - Missing connection for port 'tmscore'.
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2718) [TFMPC] - Missing connection for port 'tdicore'.
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2718) [TFMPC] - Missing connection for port 'tckcore'.
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2718) [TFMPC] - Missing connection for port 'ntdopinena'.
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2718) [TFMPC] - Missing connection for port 'corectl'.
+# ** Warning: simulation/modelsim/task2.vo(1600): (vopt-2718) [TFMPC] - Missing connection for port 'ntrst'.
+# ** Warning: task2_ag.sv(18): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 14, found 10.
+# ** Warning: task2_ag.sv(18): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: task2_ag.sv(18): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: task2_ag.sv(18): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: task2_ag.sv(18): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.task2_ag(fast)
+# Loading work.task2(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera.dffeas(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_io_obuf(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_io_ibuf(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_jtag(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__1)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__2)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__3)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__4)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__5)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__6)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__7)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__8)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__9)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__10)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__11)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__12)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__13)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__14)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__15)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__16)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__17)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__18)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__19)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__20)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__21)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__22)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__23)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__24)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__25)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__26)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__27)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__28)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__29)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__30)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__31)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__32)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__33)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__34)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__35)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__36)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__37)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__38)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__39)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__40)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__41)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__42)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__43)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__44)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__45)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__46)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__47)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__48)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__49)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__50)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__51)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__52)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__53)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__54)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__55)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__56)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__57)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__58)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__59)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__60)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__61)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__62)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__63)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__64)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__65)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__66)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__67)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__68)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__69)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_clkena(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__70)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__71)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__72)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__73)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__74)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__75)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__76)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__77)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__78)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__79)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__80)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__81)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__82)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__83)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__84)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__85)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__86)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__87)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__88)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__89)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__90)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__91)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__92)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__93)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__94)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__95)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__96)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__97)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__98)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__99)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__100)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__101)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__102)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__103)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__104)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__105)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__106)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__107)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__108)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__109)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__110)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__111)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__112)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__113)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__114)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__115)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__116)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__117)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__118)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__119)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__120)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__121)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__122)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_ram_block(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.generic_m10k(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.altera_lnsim_functions(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_block(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_register(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_register(fast__1)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_register(fast__2)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_pulse_generator(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__123)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__124)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__125)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__126)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__127)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__128)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__129)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__130)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__131)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__132)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__133)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__134)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__135)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__136)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__137)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__138)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__139)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__140)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__141)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__142)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__143)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__144)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__145)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__146)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__147)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__148)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__149)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__150)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__151)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__152)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__153)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__154)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__155)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__156)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__157)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__158)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__159)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__160)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__161)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__162)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__163)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__164)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__165)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__166)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__167)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__168)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__169)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__170)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__171)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__172)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__173)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__174)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__175)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__176)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__177)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__178)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__179)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__180)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__181)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__182)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__183)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__184)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__185)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__186)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__187)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__188)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__189)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__190)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__191)
+# vcd file task2.gate.vcd
+# vcd add -r /task2_ag/dut/*
+# run -all
+# addr   0 Expected 0x0b4, received 0x000b4
+# addr   1 Expected 0x004, received 0x00004
+# addr   2 Expected 0x02b, received 0x0002b
+# addr   3 Expected 0x0e5, received 0x000e5
+# addr   4 Expected 0x049, received 0x00049
+# addr   5 Expected 0x00a, received 0x0000a
+# addr   6 Expected 0x090, received 0x00090
+# addr   7 Expected 0x09a, received 0x0009a
+# addr   8 Expected 0x0e4, received 0x000e4
+# addr   9 Expected 0x017, received 0x00017
+# addr  10 Expected 0x0f4, received 0x000f4
+# addr  11 Expected 0x010, received 0x00010
+# addr  12 Expected 0x03a, received 0x0003a
+# addr  13 Expected 0x036, received 0x00036
+# addr  14 Expected 0x013, received 0x00013
+# addr  15 Expected 0x077, received 0x00077
+# addr  16 Expected 0x011, received 0x00011
+# addr  17 Expected 0x0c4, received 0x000c4
+# addr  18 Expected 0x0bc, received 0x000bc
+# addr  19 Expected 0x038, received 0x00038
+# addr  20 Expected 0x04f, received 0x0004f
+# addr  21 Expected 0x06d, received 0x0006d
+# addr  22 Expected 0x098, received 0x00098
+# addr  23 Expected 0x006, received 0x00006
+# addr  24 Expected 0x06e, received 0x0006e
+# addr  25 Expected 0x03d, received 0x0003d
+# addr  26 Expected 0x02c, received 0x0002c
+# addr  27 Expected 0x0ae, received 0x000ae
+# addr  28 Expected 0x0cd, received 0x000cd
+# addr  29 Expected 0x026, received 0x00026
+# addr  30 Expected 0x040, received 0x00040
+# addr  31 Expected 0x0a2, received 0x000a2
+# addr  32 Expected 0x0c2, received 0x000c2
+# addr  33 Expected 0x0da, received 0x000da
+# addr  34 Expected 0x067, received 0x00067
+# addr  35 Expected 0x068, received 0x00068
+# addr  36 Expected 0x05d, received 0x0005d
+# addr  37 Expected 0x03e, received 0x0003e
+# addr  38 Expected 0x002, received 0x00002
+# addr  39 Expected 0x073, received 0x00073
+# addr  40 Expected 0x003, received 0x00003
+# addr  41 Expected 0x0aa, received 0x000aa
+# addr  42 Expected 0x094, received 0x00094
+# addr  43 Expected 0x069, received 0x00069
+# addr  44 Expected 0x06a, received 0x0006a
+# addr  45 Expected 0x097, received 0x00097
+# addr  46 Expected 0x06f, received 0x0006f
+# addr  47 Expected 0x033, received 0x00033
+# addr  48 Expected 0x063, received 0x00063
+# addr  49 Expected 0x05b, received 0x0005b
+# addr  50 Expected 0x08a, received 0x0008a
+# addr  51 Expected 0x058, received 0x00058
+# addr  52 Expected 0x0d9, received 0x000d9
+# addr  53 Expected 0x061, received 0x00061
+# addr  54 Expected 0x0f5, received 0x000f5
+# addr  55 Expected 0x046, received 0x00046
+# addr  56 Expected 0x096, received 0x00096
+# addr  57 Expected 0x055, received 0x00055
+# addr  58 Expected 0x07d, received 0x0007d
+# addr  59 Expected 0x053, received 0x00053
+# addr  60 Expected 0x05f, received 0x0005f
+# addr  61 Expected 0x0ab, received 0x000ab
+# addr  62 Expected 0x007, received 0x00007
+# addr  63 Expected 0x09c, received 0x0009c
+# addr  64 Expected 0x0a7, received 0x000a7
+# addr  65 Expected 0x072, received 0x00072
+# addr  66 Expected 0x031, received 0x00031
+# addr  67 Expected 0x0a9, received 0x000a9
+# addr  68 Expected 0x0c6, received 0x000c6
+# addr  69 Expected 0x03f, received 0x0003f
+# addr  70 Expected 0x0f9, received 0x000f9
+# addr  71 Expected 0x091, received 0x00091
+# addr  72 Expected 0x0f2, received 0x000f2
+# addr  73 Expected 0x0f6, received 0x000f6
+# addr  74 Expected 0x07c, received 0x0007c
+# addr  75 Expected 0x0c7, received 0x000c7
+# addr  76 Expected 0x0b3, received 0x000b3
+# addr  77 Expected 0x01d, received 0x0001d
+# addr  78 Expected 0x020, received 0x00020
+# addr  79 Expected 0x088, received 0x00088
+# addr  80 Expected 0x0a0, received 0x000a0
+# addr  81 Expected 0x0ba, received 0x000ba
+# addr  82 Expected 0x00c, received 0x0000c
+# addr  83 Expected 0x085, received 0x00085
+# addr  84 Expected 0x0e1, received 0x000e1
+# addr  85 Expected 0x0cf, received 0x000cf
+# addr  86 Expected 0x0cb, received 0x000cb
+# addr  87 Expected 0x051, received 0x00051
+# addr  88 Expected 0x0c0, received 0x000c0
+# addr  89 Expected 0x02e, received 0x0002e
+# addr  90 Expected 0x0ef, received 0x000ef
+# addr  91 Expected 0x080, received 0x00080
+# addr  92 Expected 0x076, received 0x00076
+# addr  93 Expected 0x0b2, received 0x000b2
+# addr  94 Expected 0x0d6, received 0x000d6
+# addr  95 Expected 0x071, received 0x00071
+# addr  96 Expected 0x024, received 0x00024
+# addr  97 Expected 0x0ad, received 0x000ad
+# addr  98 Expected 0x06b, received 0x0006b
+# addr  99 Expected 0x0db, received 0x000db
+# addr 100 Expected 0x0ff, received 0x000ff
+# addr 101 Expected 0x0fe, received 0x000fe
+# addr 102 Expected 0x0ed, received 0x000ed
+# addr 103 Expected 0x084, received 0x00084
+# addr 104 Expected 0x04e, received 0x0004e
+# addr 105 Expected 0x08c, received 0x0008c
+# addr 106 Expected 0x0bb, received 0x000bb
+# addr 107 Expected 0x0d3, received 0x000d3
+# addr 108 Expected 0x0a5, received 0x000a5
+# addr 109 Expected 0x02f, received 0x0002f
+# addr 110 Expected 0x0be, received 0x000be
+# addr 111 Expected 0x0c8, received 0x000c8
+# addr 112 Expected 0x00e, received 0x0000e
+# addr 113 Expected 0x08f, received 0x0008f
+# addr 114 Expected 0x0d1, received 0x000d1
+# addr 115 Expected 0x0a6, received 0x000a6
+# addr 116 Expected 0x086, received 0x00086
+# addr 117 Expected 0x0e3, received 0x000e3
+# addr 118 Expected 0x062, received 0x00062
+# addr 119 Expected 0x0b0, received 0x000b0
+# addr 120 Expected 0x087, received 0x00087
+# addr 121 Expected 0x0ec, received 0x000ec
+# addr 122 Expected 0x0b9, received 0x000b9
+# addr 123 Expected 0x078, received 0x00078
+# addr 124 Expected 0x081, received 0x00081
+# addr 125 Expected 0x0e0, received 0x000e0
+# addr 126 Expected 0x04d, received 0x0004d
+# addr 127 Expected 0x05a, received 0x0005a
+# addr 128 Expected 0x07a, received 0x0007a
+# addr 129 Expected 0x079, received 0x00079
+# addr 130 Expected 0x014, received 0x00014
+# addr 131 Expected 0x029, received 0x00029
+# addr 132 Expected 0x056, received 0x00056
+# addr 133 Expected 0x0e8, received 0x000e8
+# addr 134 Expected 0x04a, received 0x0004a
+# addr 135 Expected 0x08e, received 0x0008e
+# addr 136 Expected 0x018, received 0x00018
+# addr 137 Expected 0x0c5, received 0x000c5
+# addr 138 Expected 0x0ca, received 0x000ca
+# addr 139 Expected 0x0b7, received 0x000b7
+# addr 140 Expected 0x025, received 0x00025
+# addr 141 Expected 0x0de, received 0x000de
+# addr 142 Expected 0x099, received 0x00099
+# addr 143 Expected 0x0c3, received 0x000c3
+# addr 144 Expected 0x02a, received 0x0002a
+# addr 145 Expected 0x065, received 0x00065
+# addr 146 Expected 0x030, received 0x00030
+# addr 147 Expected 0x01a, received 0x0001a
+# addr 148 Expected 0x0ea, received 0x000ea
+# addr 149 Expected 0x0fb, received 0x000fb
+# addr 150 Expected 0x0a1, received 0x000a1
+# addr 151 Expected 0x089, received 0x00089
+# addr 152 Expected 0x035, received 0x00035
+# addr 153 Expected 0x0a4, received 0x000a4
+# addr 154 Expected 0x009, received 0x00009
+# addr 155 Expected 0x0a3, received 0x000a3
+# addr 156 Expected 0x0c1, received 0x000c1
+# addr 157 Expected 0x0d8, received 0x000d8
+# addr 158 Expected 0x02d, received 0x0002d
+# addr 159 Expected 0x0b8, received 0x000b8
+# addr 160 Expected 0x060, received 0x00060
+# addr 161 Expected 0x047, received 0x00047
+# addr 162 Expected 0x039, received 0x00039
+# addr 163 Expected 0x0bd, received 0x000bd
+# addr 164 Expected 0x01f, received 0x0001f
+# addr 165 Expected 0x005, received 0x00005
+# addr 166 Expected 0x05e, received 0x0005e
+# addr 167 Expected 0x043, received 0x00043
+# addr 168 Expected 0x0b1, received 0x000b1
+# addr 169 Expected 0x0dd, received 0x000dd
+# addr 170 Expected 0x0e9, received 0x000e9
+# addr 171 Expected 0x01c, received 0x0001c
+# addr 172 Expected 0x0af, received 0x000af
+# addr 173 Expected 0x09b, received 0x0009b
+# addr 174 Expected 0x0fa, received 0x000fa
+# addr 175 Expected 0x001, received 0x00001
+# addr 176 Expected 0x0f7, received 0x000f7
+# addr 177 Expected 0x008, received 0x00008
+# addr 178 Expected 0x075, received 0x00075
+# addr 179 Expected 0x0b6, received 0x000b6
+# addr 180 Expected 0x082, received 0x00082
+# addr 181 Expected 0x0ce, received 0x000ce
+# addr 182 Expected 0x042, received 0x00042
+# addr 183 Expected 0x0e2, received 0x000e2
+# addr 184 Expected 0x0cc, received 0x000cc
+# addr 185 Expected 0x09e, received 0x0009e
+# addr 186 Expected 0x0eb, received 0x000eb
+# addr 187 Expected 0x027, received 0x00027
+# addr 188 Expected 0x022, received 0x00022
+# addr 189 Expected 0x0df, received 0x000df
+# addr 190 Expected 0x0bf, received 0x000bf
+# addr 191 Expected 0x0fc, received 0x000fc
+# addr 192 Expected 0x00d, received 0x0000d
+# addr 193 Expected 0x0d0, received 0x000d0
+# addr 194 Expected 0x095, received 0x00095
+# addr 195 Expected 0x023, received 0x00023
+# addr 196 Expected 0x0d2, received 0x000d2
+# addr 197 Expected 0x0a8, received 0x000a8
+# addr 198 Expected 0x07e, received 0x0007e
+# addr 199 Expected 0x074, received 0x00074
+# addr 200 Expected 0x04c, received 0x0004c
+# addr 201 Expected 0x0d7, received 0x000d7
+# addr 202 Expected 0x012, received 0x00012
+# addr 203 Expected 0x07f, received 0x0007f
+# addr 204 Expected 0x0fd, received 0x000fd
+# addr 205 Expected 0x083, received 0x00083
+# addr 206 Expected 0x01e, received 0x0001e
+# addr 207 Expected 0x028, received 0x00028
+# addr 208 Expected 0x064, received 0x00064
+# addr 209 Expected 0x054, received 0x00054
+# addr 210 Expected 0x03c, received 0x0003c
+# addr 211 Expected 0x021, received 0x00021
+# addr 212 Expected 0x0dc, received 0x000dc
+# addr 213 Expected 0x0f3, received 0x000f3
+# addr 214 Expected 0x093, received 0x00093
+# addr 215 Expected 0x059, received 0x00059
+# addr 216 Expected 0x08b, received 0x0008b
+# addr 217 Expected 0x07b, received 0x0007b
+# addr 218 Expected 0x000, received 0x00000
+# addr 219 Expected 0x048, received 0x00048
+# addr 220 Expected 0x0e7, received 0x000e7
+# addr 221 Expected 0x06c, received 0x0006c
+# addr 222 Expected 0x0d5, received 0x000d5
+# addr 223 Expected 0x0c9, received 0x000c9
+# addr 224 Expected 0x070, received 0x00070
+# addr 225 Expected 0x09f, received 0x0009f
+# addr 226 Expected 0x0ac, received 0x000ac
+# addr 227 Expected 0x041, received 0x00041
+# addr 228 Expected 0x00b, received 0x0000b
+# addr 229 Expected 0x0f0, received 0x000f0
+# addr 230 Expected 0x019, received 0x00019
+# addr 231 Expected 0x0b5, received 0x000b5
+# addr 232 Expected 0x08d, received 0x0008d
+# addr 233 Expected 0x016, received 0x00016
+# addr 234 Expected 0x0d4, received 0x000d4
+# addr 235 Expected 0x0f1, received 0x000f1
+# addr 236 Expected 0x092, received 0x00092
+# addr 237 Expected 0x09d, received 0x0009d
+# addr 238 Expected 0x066, received 0x00066
+# addr 239 Expected 0x044, received 0x00044
+# addr 240 Expected 0x04b, received 0x0004b
+# addr 241 Expected 0x015, received 0x00015
+# addr 242 Expected 0x045, received 0x00045
+# addr 243 Expected 0x0f8, received 0x000f8
+# addr 244 Expected 0x00f, received 0x0000f
+# addr 245 Expected 0x057, received 0x00057
+# addr 246 Expected 0x034, received 0x00034
+# addr 247 Expected 0x032, received 0x00032
+# addr 248 Expected 0x050, received 0x00050
+# addr 249 Expected 0x052, received 0x00052
+# addr 250 Expected 0x0ee, received 0x000ee
+# addr 251 Expected 0x03b, received 0x0003b
+# addr 252 Expected 0x05c, received 0x0005c
+# addr 253 Expected 0x037, received 0x00037
+# addr 254 Expected 0x0e6, received 0x000e6
+# addr 255 Expected 0x01b, received 0x0001b
+# msg: DUT: task2.sv. Expectation: key scheduling algorithm result matches expected. Actual:         256/256 matching autograder
+# PASSED at t=6159
+# ** Note: $stop    : task2_ag.sv(110)
+#    Time: 6159 ps  Iteration: 1  Instance: /task2_ag
+# Break at task2_ag.sv line 110
+# Stopped at task2_ag.sv line 110
+# quit
+# End time: 10:25:56 on Nov 17,2020, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 13

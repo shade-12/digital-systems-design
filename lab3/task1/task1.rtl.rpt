@@ -1,0 +1,50 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 07:09:40 on Nov 19,2020
+vlog -l task1.rtl-vlog.rpt -sv "+acc=rnp" task1_ag.sv init.sv task1.sv memories/s_mem.v 
+-- Compiling module task1_ag
+-- Compiling module init
+-- Compiling module task1
+-- Compiling module s_mem
+
+Top level modules:
+	task1_ag
+End time: 07:09:41 on Nov 19,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l task1.rtl-vsim.rpt -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -c -do "vcd file task1.rtl.vcd;vcd add -r /task1_ag/dut/*;run -all;quit" task1_ag 
+# Start time: 07:09:43 on Nov 19,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.task1_ag(fast)
+# Loading work.task1(fast)
+# Loading work.init(fast)
+# Loading work.s_mem(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf.altsyncram(fast)
+# vcd file task1.rtl.vcd
+# vcd add -r /task1_ag/dut/*
+# run -all
+# msg: DUT: task1.sv. Expectation: data initialized as expected. Actual:         256/256 matching
+# PASSED at t=1031
+# ** Note: $stop    : task1_ag.sv(63)
+#    Time: 1031 ps  Iteration: 1  Instance: /task1_ag
+# Break at task1_ag.sv line 63
+# Stopped at task1_ag.sv line 63
+# quit
+# End time: 07:09:45 on Nov 19,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

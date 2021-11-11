@@ -1,0 +1,157 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 07:10:07 on Nov 19,2020
+vlog -l prga.rtl-vlog.rpt -sv "+acc=rnp" prga_ag.sv arc4.sv init.sv ksa.sv prga.sv task3.sv memories/s_mem.v memories/pt_mem.v memories/ct_mem.v 
+-- Compiling module prga_ag
+-- Compiling module ag_sram
+-- Compiling module arc4
+-- Compiling module init
+-- Compiling module ksa
+-- Compiling module prga
+-- Compiling module task3
+-- Compiling module s_mem
+-- Compiling module pt_mem
+-- Compiling module ct_mem
+
+Top level modules:
+	prga_ag
+	task3
+End time: 07:10:07 on Nov 19,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l prga.rtl-vsim.rpt -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -c -do "vcd file prga.rtl.vcd;vcd add -r /prga_ag/dut/*;run -all;quit" prga_ag 
+# Start time: 07:10:10 on Nov 19,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.prga_ag(fast)
+# Loading work.prga(fast)
+# Loading work.ag_sram(fast)
+# vcd file prga.rtl.vcd
+# vcd add -r /prga_ag/dut/*
+# run -all
+# msg: Fails if rdy is not high 20 clock cycles after coming out of a 20-clock-cycle reset
+# PASSED at t=800
+# msg: Fails if any S mem writes occurred after reset but before en was set high
+# PASSED at t=800
+# msg: Fails if rdy is combinationally dependent on en
+# PASSED at t=800
+# msg: Fails if rdy is not low at the posedge after en is deasserted
+# PASSED at t=830
+# msg: Fails if rdy is not reasserted within 4096 clock cycles
+# PASSED at t=48680
+# msg: Fails if S mem write count (478) is not exactly twice the message length (478)
+# PASSED at t=48680
+# msg: Fails if S mem write count (478) is off by over 50%
+# PASSED at t=48680
+# msg: Fails if correct S swap operations count (239) is 0
+# PASSED at t=48680
+# msg: Fails if consistently addressed swap operations count (239) is less than 2 or over 256
+# PASSED at t=48680
+# msg: Fails if fully correct swap operations count (239) is less than 2 or over 256
+# PASSED at t=48680
+# msg: Fails if consistently addressed swap operations count (239) is less than 4 or over 256
+# PASSED at t=48680
+# msg: Fails if fully correct swap operations count (239) is less than 4 or over 256
+# PASSED at t=48680
+# msg: Fails if consistently addressed swap operations count (239) is less than 8 or over 256
+# PASSED at t=48680
+# msg: Fails if fully correct swap operations count (239) is less than 8 or over 256
+# PASSED at t=48680
+# msg: Fails if consistently addressed swap operations count (239) is less than 16 or over 256
+# PASSED at t=48680
+# msg: Fails if fully correct swap operations count (239) is less than 16 or over 256
+# PASSED at t=48680
+# msg: Fails if consistently addressed swap operations count (239) is less than 32 or over 256
+# PASSED at t=48680
+# msg: Fails if fully correct swap operations count (239) is less than 32 or over 256
+# PASSED at t=48680
+# msg: Fails if consistently addressed swap operations count (239) is less than 64 or over 256
+# PASSED at t=48680
+# msg: Fails if fully correct swap operations count (239) is less than 64 or over 256
+# PASSED at t=48680
+# msg: Fails if consistently addressed swap operations count (239) is less than 128 or over 256
+# PASSED at t=48680
+# msg: Fails if fully correct swap operations count (239) is less than 128 or over 256
+# PASSED at t=48680
+# msg: Fails if correct swap operations (239) is not equal to message length (239)
+# PASSED at t=48680
+# msg: Fails if final S memory contents are incorrect
+# PASSED at t=48680
+# msg: Fails if final PT message length (239) is not as expected (239)
+# PASSED at t=48680
+# msg: Fails if final PT message contents have any mismatches (0)
+# PASSED at t=48680
+# msg: Fails if final PT message contents have over 1 mismatches (0)
+# PASSED at t=48680
+# msg: Fails if final PT message contents have over 4 mismatches (0)
+# PASSED at t=48680
+# msg: Fails if final PT message contents have over 16 mismatches (0)
+# PASSED at t=48680
+# msg: Fails if final PT message contents have over 64 mismatches (0)
+# PASSED at t=48680
+# msg: Fails if any S mem writes occurred after completion
+# PASSED at t=49080
+# msg: Fails if rdy is not low at the posedge after en is deasserted (re-enable run)
+# PASSED at t=49110
+# msg: Fails if rdy is not reasserted within 4096 clock cycles (re-enable run)
+# PASSED at t=96960
+# msg: Fails if final S memory contents are incorrect
+# FAILED at t=96960
+# AG INFO: - expected: ac 02 80 18 49 d8 48 d9 05 a6 3a 78 e9 c8 20 54 b3 25 52 7a 62 71 ec f3 34 41 28 3d 98 b9 3f 56 66 39 da c6 a5 ea b6 03 59 67 b8 07 40 0d 6a e1 d0 f4 1c c4 43 0c e7 24 e5 fd 57 68 7d b5 e8 d1 4b 15 70 97 74 fe 64 65 f1 61 11 44 99 bd 10 76 2a 94 6b 6e c2 a9 91 a7 ab 7f ed 46 2c 04 3e 36 63 08 8d 8a 13 4a 90 95 82 a4 b7 2e b1 8b ef 4f 9a 42 ff c9 01 1d 6d 0a e3 ee 6c f2 23 be 4e 38 7e b2 50 c3 9f 53 5c 8e c0 2b 55 45 96 73 33 d6 2f dc 3b 9d f6 35 d5 ca 84 1a 06 df bc 0b 75 f9 83 86 37 e6 c1 2d bf e2 af db 79 17 00 de c5 9e d3 a3 fb d7 5d e0 a1 f8 ad 93 60 58 cd d2 87 89 ba b4 d4 5f 7b 32 1f 0e 30 5e 9b cb cf e4 f5 fc a8 9c 29 81 aa fa 5b 21 3c 4c 5a 8f dd 0f eb 85 69 72 f0 7c 31 a0 bb 88 27 f7 ce 22 92 51 16 1b 14 26 a2 6f 4d 19 b0 c7 8c 47 ae cc 09 77 12 1e
+# AG INFO: - observed: d2 6d 69 18 49 d8 6b 82 4e e1 3d 78 e9 5e 04 fe 5b 8a 52 d1 59 73 5a a7 a5 f4 25 10 bb f9 f1 43 c5 81 5c 40 af 35 98 89 b4 f2 bd 57 6c 65 07 91 a4 d5 fb b7 24 15 c2 e7 cd 93 56 62 2d 1a 61 7a 3e 7f 39 a2 90 13 30 8e 33 38 2f b1 e2 fd 95 ef b6 00 48 01 d7 85 9a 7b ee 4a b0 0a 3a 3b c6 d6 99 ae 0d 28 54 4b 92 2c 96 bc bf 55 0e 66 b2 75 3c 42 29 cb 72 b3 be 8d 27 d4 84 1e b9 36 76 0c 34 c3 87 0f 06 86 2b 94 3f 32 8f 9f a8 ab a0 e0 1f d3 20 08 5d 80 f7 7c c9 a9 11 da 37 6f 9e de 67 cf a1 f5 26 17 e3 8b 9b c0 44 df 7d 60 88 64 03 ba ce fc 14 fa 2a 51 1c c4 4f 79 4c ac 5f 58 7e f0 71 dd f3 dc f8 aa 50 c8 e5 53 70 6e 1b 31 d0 68 a6 46 22 02 1d a3 ff c1 2e ec db 05 f6 ed ea 0b 9c 63 41 eb ad 45 97 16 d9 23 e4 e6 21 b8 e8 6a ca 74 4d 19 b5 c7 8c 47 9d cc 09 77 12 83
+# msg: Fails if final PT message length (239) is not as expected (23)
+# FAILED at t=96960
+# msg: Fails if final PT message contents have any mismatches (0)
+# PASSED at t=96960
+# msg: Fails if rdy is not low at the posedge after en is deasserted (reset run)
+# PASSED at t=97790
+# msg: Fails if rdy is not reasserted within 4096 clock cycles (reset run)
+# PASSED at t=102440
+# msg: Fails if final S memory contents are incorrect
+# FAILED at t=102440
+# AG INFO: - expected: ac 02 ea 18 49 d8 6b 82 05 a6 3d 78 e9 c8 04 fe 1d 8a 52 d1 59 73 2e a7 a5 f4 25 10 bb f9 f1 43 c5 81 5c 40 af 35 ad 58 68 f2 bd 57 6c 65 c1 91 a4 d5 fb b7 a3 15 c2 e7 cd 93 56 62 2d 1a 61 7a 3e 7f 46 a2 90 13 30 8e 33 38 2f aa e2 c4 95 ef 1c 00 48 01 d7 85 9a f3 ee 4a b0 0a 3a 3b c6 d6 99 ae 0d 28 54 4b e4 2c 96 bc bf ec 0e 66 b2 75 ff 42 29 53 0b b3 be 8d 27 d4 84 1e b9 36 76 70 34 c3 87 0f 06 86 2b 94 3f dc 8f 9f d0 71 eb e0 1f d3 20 08 14 80 f7 7c c9 ed e6 da 37 6f 5f de 67 cf 2a 97 26 17 e3 8b e5 c0 44 df 7d db 45 50 23 ba d9 21 5d 6d a1 f8 b6 fd 60 03 7e d2 9e 89 07 b4 ab 4f 7b 32 11 b1 64 5e 9b cb 0c 74 f5 fc a8 9c e1 39 79 fa 5b 24 3c 4c 5a 55 dd 4e e8 a9 69 72 f0 ca 31 a0 98 88 b8 41 ce 22 92 51 16 1b f6 6a 63 6e 4d 19 b5 c7 8c 47 9d cc 09 77 12 83
+# AG INFO: - observed: ac 02 80 18 49 d8 48 d9 05 a6 3a 78 e9 c8 20 54 b3 25 52 7a 62 71 ec f3 34 41 28 3d 98 b9 3f 56 66 39 da c6 a5 ea b6 03 59 67 b8 07 40 0d 6a e1 d0 f4 1c c4 43 0c e7 24 e5 fd 57 68 7d b5 e8 d1 4b 15 70 97 74 fe 64 65 f1 61 11 44 99 bd 10 76 2a 94 6b 6e c2 a9 91 a7 ab 7f ed 46 2c 04 3e 36 63 08 8d 8a 13 4a 90 95 82 a4 b7 2e b1 8b ef 4f 9a 42 ff c9 01 1d 6d 0a e3 ee 6c f2 23 be 4e 38 7e b2 50 c3 9f 53 5c 8e c0 2b 55 45 96 73 33 d6 2f dc 3b 9d f6 35 d5 ca 84 1a 06 df bc 0b 75 f9 83 86 37 e6 c1 2d bf e2 af db 79 17 00 de c5 9e d3 a3 fb d7 5d e0 a1 f8 ad 93 60 58 cd d2 87 89 ba b4 d4 5f 7b 32 1f 0e 30 5e 9b cb cf e4 f5 fc a8 9c 29 81 aa fa 5b 21 3c 4c 5a 8f dd 0f eb 85 69 72 f0 7c 31 a0 bb 88 27 f7 ce 22 92 51 16 1b 14 26 a2 6f 4d 19 b0 c7 8c 47 ae cc 09 77 12 1e
+# msg: Fails if final PT message length (23) is not as expected (179)
+# FAILED at t=102440
+# msg: Fails if final PT message contents have any mismatches (156)
+# FAILED at t=102440
+# AG INFO: - expected: b3 9d 62 d5 da 55 ef 05 a6 6e f8 cd f4 71 7d 71 b1 be 64 10 d4 0a 41 e0 2a 94 b5 25 e5 b9 30 94 49 f5 e5 c9 d7 f1 08 d4 bf 10 b4 4f fd 2b 6e 39 4e e6 93 30 bd ab 70 89 30 68 b7 0d 73 a7 1a 8d ba 34 59 0d 49 bc 87 ce e8 31 6f 07 66 23 62 41 b3 00 80 f6 b6 09 83 50 51 c0 ef 09 11 2e fe 52 1d ea 3e 0e 02 10 4d 24 0b 45 d3 1a e1 e0 76 85 42 d0 71 db f4 0e 67 10 96 f2 df d3 d4 20 64 75 bd 1f 88 cf cf af 1c ac fd 51 64 dc 35 dc 98 a2 18 93 7c f8 a9 ce 3b 74 e5 de fd 2b 78 1c 7a 43 74 31 3b 76 47 4b a2 e9 fd 7e 39 38 8b 29 42 e4 21 78 f5 77
+# AG INFO: - observed: 17 9d 62 d5 da 55 ef 05 a6 6e f8 cd f4 71 7d 71 b1 be 64 10 d4 0a 41 e0 bb ff 70 bc e9 ff 09 31 bb 1c 8c a3 42 a7 77 93 74 96 35 89 bf b9 50 ad df e2 d1 63 b9 28 49 92 01 c7 5f e2 aa a0 17 db 90 0e af b0 ef b4 74 fb 0c 58 6a 1b 82 b5 75 3d 74 4a 1b dc c6 e6 35 ef 0a 0a 76 37 5a 1a e3 bf 57 50 1a 8e 2a 29 7e ac 38 7d 61 ae bc 86 20 8d b8 30 03 9f e4 10 6a 88 8b 02 62 b2 53 df 52 e3 b6 41 63 df c5 be f4 50 c7 50 43 d9 30 d0 a5 5a 9e af 82 73 3f 27 8e 72 46 db 1d d0 15 46 01 02 14 ca d9 bd d3 fd 66 10 60 d8 65 bc b4 22 1b 7b 2b 3f 5a eb
+# msg: Fails if rdy is not reasserted within 4096 clock cycles (length 255 run)
+# PASSED at t=102440
+# msg: Fails if final S memory contents are incorrect
+# FAILED at t=102440
+# AG INFO: - expected: ac 02 ea 18 49 d8 6b 82 05 a6 3d 78 e9 c8 04 fe 1d 8a 52 d1 59 73 2e a7 a5 f4 25 10 bb f9 f1 43 c5 81 5c 40 af 35 ad 58 68 f2 bd 57 6c 65 c1 91 a4 d5 fb b7 a3 15 c2 e7 cd 93 56 62 2d 1a 61 7a 3e 7f 46 a2 90 13 30 8e 33 38 2f aa e2 c4 95 ef 1c 00 48 01 d7 85 9a f3 ee 4a b0 0a 3a 3b c6 d6 99 ae 0d 28 54 4b e4 2c 96 bc bf ec 0e 66 b2 75 ff 42 29 53 0b b3 be 8d 27 d4 84 1e b9 36 76 70 34 c3 87 0f 06 86 2b 94 3f dc 8f 9f d0 71 eb e0 1f d3 20 08 14 80 f7 7c c9 ed e6 da 37 6f 5f de 67 cf 2a 97 26 17 e3 8b e5 c0 44 df 7d db 45 50 23 ba d9 21 5d 6d a1 f8 b6 fd 60 03 7e d2 9e 89 07 b4 ab 4f 7b 32 11 b1 64 5e 9b cb 0c 74 f5 fc a8 9c e1 39 79 fa 5b 24 3c 4c 5a 55 dd 4e e8 a9 69 72 f0 ca 31 a0 98 88 b8 41 ce 22 92 51 16 1b f6 6a 63 6e 4d 19 b5 c7 8c 47 9d cc 09 77 12 83
+# AG INFO: - observed: ac 02 80 18 49 d8 48 d9 05 a6 3a 78 e9 c8 20 54 b3 25 52 7a 62 71 ec f3 34 41 28 3d 98 b9 3f 56 66 39 da c6 a5 ea b6 03 59 67 b8 07 40 0d 6a e1 d0 f4 1c c4 43 0c e7 24 e5 fd 57 68 7d b5 e8 d1 4b 15 70 97 74 fe 64 65 f1 61 11 44 99 bd 10 76 2a 94 6b 6e c2 a9 91 a7 ab 7f ed 46 2c 04 3e 36 63 08 8d 8a 13 4a 90 95 82 a4 b7 2e b1 8b ef 4f 9a 42 ff c9 01 1d 6d 0a e3 ee 6c f2 23 be 4e 38 7e b2 50 c3 9f 53 5c 8e c0 2b 55 45 96 73 33 d6 2f dc 3b 9d f6 35 d5 ca 84 1a 06 df bc 0b 75 f9 83 86 37 e6 c1 2d bf e2 af db 79 17 00 de c5 9e d3 a3 fb d7 5d e0 a1 f8 ad 93 60 58 cd d2 87 89 ba b4 d4 5f 7b 32 1f 0e 30 5e 9b cb cf e4 f5 fc a8 9c 29 81 aa fa 5b 21 3c 4c 5a 8f dd 0f eb 85 69 72 f0 7c 31 a0 bb 88 27 f7 ce 22 92 51 16 1b 14 26 a2 6f 4d 19 b0 c7 8c 47 ae cc 09 77 12 1e
+# msg: Fails if final PT message length (23) is not as expected (179)
+# FAILED at t=102440
+# msg: Fails if rdy is not low at the posedge after en is deasserted (length 0 run)
+# PASSED at t=103270
+# msg: Fails if rdy is not reasserted within 4096 clock cycles (length 0 run)
+# PASSED at t=139120
+# msg: Fails if final S memory contents are incorrect
+# FAILED at t=139120
+# AG INFO: - expected: ac 20 3e 2b f2 5b 9a b6 2a a2 f0 8b ed 60 66 f4 84 30 c0 b5 54 79 c9 01 34 41 28 3d 98 b9 3f 56 02 39 da c6 a5 ea d9 03 59 67 b8 07 40 0d 6a e1 d0 62 1c c4 43 0c e7 24 e5 fd 57 68 7d 7a e8 d1 4b 15 70 97 74 fe 64 65 f1 61 11 44 99 bd 10 76 05 94 6b 6e c2 a9 91 a7 ab 7f e9 46 2c 04 80 36 63 08 8d 8a 13 4a 90 95 82 a4 b7 2e b1 78 ef 4f 48 42 ff ec f3 1d 6d 0a e3 ee 6c 49 23 be 4e 38 7e b2 50 c3 9f 53 5c 8e 52 18 55 45 96 73 33 d6 2f dc 3b 9d f6 35 d5 ca b3 1a 06 df bc 0b 75 f9 83 86 37 e6 c1 2d bf e2 af db 71 17 00 de c5 9e d3 a3 fb d7 5d e0 a1 f8 ad 93 c8 58 cd d2 87 89 ba b4 d4 5f 7b 32 1f 0e 25 5e 9b cb cf e4 f5 fc a8 9c 29 81 aa fa d8 21 3c 4c 5a 8f dd 0f eb 85 69 72 3a 7c 31 a0 bb 88 27 f7 ce 22 92 51 16 1b 14 26 a6 6f 4d 19 b0 c7 8c 47 ae cc 09 77 12 1e
+# AG INFO: - observed: ac 02 ea 18 49 d8 6b 82 05 a6 3d 78 e9 c8 04 fe 1d 8a 52 d1 59 73 2e a7 a5 f4 25 10 bb f9 f1 43 c5 81 5c 40 af 35 ad 58 68 f2 bd 57 6c 65 c1 91 a4 d5 fb b7 a3 15 c2 e7 cd 93 56 62 2d 1a 61 7a 3e 7f 46 a2 90 13 30 8e 33 38 2f aa e2 c4 95 ef 1c 00 48 01 d7 85 9a f3 ee 4a b0 0a 3a 3b c6 d6 99 ae 0d 28 54 4b e4 2c 96 bc bf ec 0e 66 b2 75 ff 42 29 53 0b b3 be 8d 27 d4 84 1e b9 36 76 70 34 c3 87 0f 06 86 2b 94 3f dc 8f 9f d0 71 eb e0 1f d3 20 08 14 80 f7 7c c9 ed e6 da 37 6f 5f de 67 cf 2a 97 26 17 e3 8b e5 c0 44 df 7d db 45 50 23 ba d9 21 5d 6d a1 f8 b6 fd 60 03 7e d2 9e 89 07 b4 ab 4f 7b 32 11 b1 64 5e 9b cb 0c 74 f5 fc a8 9c e1 39 79 fa 5b 24 3c 4c 5a 55 dd 4e e8 a9 69 72 f0 ca 31 a0 98 88 b8 41 ce 22 92 51 16 1b f6 6a 63 6e 4d 19 b5 c7 8c 47 9d cc 09 77 12 83
+# msg: Fails if final PT message length (179) is not as expected (0)
+# FAILED at t=139120
+# msg: Fails if rdy is not low at the posedge after en is deasserted (length 255 run)
+# PASSED at t=139950
+# quit
+# End time: 07:10:12 on Nov 19,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

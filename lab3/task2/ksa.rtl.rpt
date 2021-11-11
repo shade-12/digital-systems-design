@@ -1,0 +1,113 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 07:09:45 on Nov 19,2020
+vlog -l ksa.rtl-vlog.rpt -sv "+acc=rnp" ksa_ag.sv init.sv ksa.sv task2.sv memories/s_mem.v memories/pt_mem.v 
+-- Compiling module ksa_ag
+-- Compiling module ag_sram
+-- Compiling module init
+-- Compiling module ksa
+-- Compiling module task2
+-- Compiling module s_mem
+-- Compiling module pt_mem
+
+Top level modules:
+	ksa_ag
+	task2
+	pt_mem
+End time: 07:09:46 on Nov 19,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l ksa.rtl-vsim.rpt -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -c -do "vcd file ksa.rtl.vcd;vcd add -r /ksa_ag/dut/*;run -all;quit" ksa_ag 
+# Start time: 07:09:48 on Nov 19,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.ksa_ag(fast)
+# Loading work.ag_sram(fast)
+# Loading work.ksa(fast)
+# vcd file ksa.rtl.vcd
+# vcd add -r /ksa_ag/dut/*
+# run -all
+# msg: Fails if rdy is not high 20 clock cycles after coming out of a 20-clock-cycle reset
+# PASSED at t=800
+# msg: Fails if any S mem writes occurred after reset but before en was set high
+# PASSED at t=800
+# msg: Fails if rdy is combinationally dependent on en
+# PASSED at t=800
+# msg: Fails if rdy is not low at the posedge after en is deasserted
+# PASSED at t=830
+# msg: Fails if rdy is not reasserted within 4096 clock cycles
+# PASSED at t=36700
+# msg: Fails if mem write count (512) is not exactly 512
+# PASSED at t=36700
+# msg: Fails if mem write count (512) is off by over 50%
+# PASSED at t=36700
+# msg: Fails if correct swap operations count (256) is 0
+# PASSED at t=36700
+# msg: Fails if consistently addressed swap operations count (256) is less than 2 or over 256
+# PASSED at t=36700
+# msg: Fails if fully correct swap operations count (256) is less than 2 or over 256
+# PASSED at t=36700
+# msg: Fails if consistently addressed swap operations count (256) is less than 4 or over 256
+# PASSED at t=36700
+# msg: Fails if fully correct swap operations count (256) is less than 4 or over 256
+# PASSED at t=36700
+# msg: Fails if consistently addressed swap operations count (256) is less than 8 or over 256
+# PASSED at t=36700
+# msg: Fails if fully correct swap operations count (256) is less than 8 or over 256
+# PASSED at t=36700
+# msg: Fails if consistently addressed swap operations count (256) is less than 16 or over 256
+# PASSED at t=36700
+# msg: Fails if fully correct swap operations count (256) is less than 16 or over 256
+# PASSED at t=36700
+# msg: Fails if consistently addressed swap operations count (256) is less than 32 or over 256
+# PASSED at t=36700
+# msg: Fails if fully correct swap operations count (256) is less than 32 or over 256
+# PASSED at t=36700
+# msg: Fails if consistently addressed swap operations count (256) is less than 64 or over 256
+# PASSED at t=36700
+# msg: Fails if fully correct swap operations count (256) is less than 64 or over 256
+# PASSED at t=36700
+# msg: Fails if consistently addressed swap operations count (256) is less than 128 or over 256
+# PASSED at t=36700
+# msg: Fails if fully correct swap operations count (256) is less than 128 or over 256
+# PASSED at t=36700
+# msg: Fails if correct swap operations (256) is not 256
+# PASSED at t=36700
+# msg: Fails if final S memory contents are incorrect
+# PASSED at t=36700
+# msg: Fails if any S mem writes occurred after completion
+# PASSED at t=37100
+# msg: Fails if rdy is not reasserted within 4096 clock cycles of re-enable
+# PASSED at t=73000
+# msg: Fails if final S memory contents are incorrect
+# PASSED at t=73000
+# msg: Fails if rdy is not high 20 clock cycles after coming out of second reset
+# PASSED at t=73800
+# msg: Fails if any S mem writes occurred after second reset but before en was set high
+# PASSED at t=73800
+# msg: Fails if rdy is not reasserted within 4096 clock cycles of re-enable
+# PASSED at t=109700
+# msg: Fails if final S memory contents are incorrect
+# PASSED at t=109700
+# ** Note: $stop    : ksa_ag.sv(301)
+#    Time: 109700 ps  Iteration: 0  Instance: /ksa_ag
+# Break at ksa_ag.sv line 301
+# Stopped at ksa_ag.sv line 301
+# quit
+# End time: 07:09:50 on Nov 19,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

@@ -1,0 +1,86 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 07:09:34 on Nov 19,2020
+vlog -l init.rtl-vlog.rpt -sv "+acc=rnp" init_ag.sv init.sv task1.sv memories/s_mem.v 
+-- Compiling module init_ag
+-- Compiling module init
+-- Compiling module task1
+-- Compiling module s_mem
+
+Top level modules:
+	init_ag
+	task1
+End time: 07:09:34 on Nov 19,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l init.rtl-vsim.rpt -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -c -do "vcd file init.rtl.vcd;vcd add -r /init_ag/dut/*;run -all;quit" init_ag 
+# Start time: 07:09:38 on Nov 19,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.init_ag(fast)
+# Loading work.init(fast)
+# vcd file init.rtl.vcd
+# vcd add -r /init_ag/dut/*
+# run -all
+# msg: Fails if rdy is not high 20 clock cycles after coming out of a 20-clock-cycle reset
+# PASSED at t=800
+# msg: Fails if any mem writes occurred after reset but before en was set high
+# PASSED at t=800
+# msg: Fails if rdy is combinationally dependent on en
+# PASSED at t=800
+# msg: Fails if rdy is not low at the posedge after en is deasserted
+# PASSED at t=830
+# msg: Fails if rdy is not reasserted within 1024 clock cycles
+# PASSED at t=5960
+# msg: Fails if mem write count (256) is not exactly 256
+# PASSED at t=5960
+# msg: Fails if mem write count (256) is off by over 50%
+# PASSED at t=5960
+# msg: Fails if not all written values were correct (256 matched of 256)
+# PASSED at t=5960
+# msg: Fails if rdy is deasserted without en within the next 1024 clock cycles
+# PASSED at t=26440
+# msg: Fails if any mem writes occurred after completion
+# PASSED at t=26840
+# msg: Fails if rdy is not reasserted within 1024 clock cycles of re-enable
+# PASSED at t=32000
+# msg: Fails if mem write count is not identical in the first (256) and second (256) runs
+# PASSED at t=32000
+# msg: Fails if mem correctly written value count is not identical in the first (256) and second (256) runs
+# PASSED at t=32000
+# msg: Fails if any mem writes occurred after completion of re-run
+# PASSED at t=32000
+# msg: Fails if rdy is not high 20 clock cycles after coming out of second reset
+# PASSED at t=32800
+# msg: Fails if any mem writes occurred after second reset but before en was set high
+# PASSED at t=32800
+# msg: Fails if rdy is not reasserted within 1024 clock cycles of enable after second reset
+# PASSED at t=37960
+# msg: Fails if mem write count is not identical in the first (256) and third (256) runs
+# PASSED at t=37960
+# msg: Fails if mem correctly written value count is not identical in the first (256) and third (256) runs
+# PASSED at t=37960
+# msg: Fails if any mem writes occurred after completion of post-reset re-run
+# PASSED at t=37960
+# ** Note: $stop    : init_ag.sv(192)
+#    Time: 37960 ps  Iteration: 0  Instance: /init_ag
+# Break at init_ag.sv line 192
+# Stopped at init_ag.sv line 192
+# quit
+# End time: 07:09:40 on Nov 19,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

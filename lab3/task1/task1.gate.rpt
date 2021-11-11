@@ -1,0 +1,210 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 10:25:05 on Nov 17,2020
+vlog -l task1.gate-vlog.rpt -sv "+define+AG_NETLIST" "+acc=rnp" task1_ag.sv simulation/modelsim/task1.vo memories/s_mem.v 
+-- Compiling module task1_ag
+-- Compiling module task1
+-- Compiling module s_mem
+
+Top level modules:
+	task1_ag
+	s_mem
+End time: 10:25:05 on Nov 17,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l task1.gate-vsim.rpt -t 1ps -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_mf -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera -L /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev -c -do "vcd file task1.gate.vcd;vcd add -r /task1_ag/dut/*;run -all;quit" task1_ag 
+# Start time: 10:25:07 on Nov 17,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2685) [TFMPC] - Too few port connections for 'altera_internal_jtag'.  Expected 21, found 14.
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2718) [TFMPC] - Missing connection for port 'tdocore'.
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2718) [TFMPC] - Missing connection for port 'tmscore'.
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2718) [TFMPC] - Missing connection for port 'tdicore'.
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2718) [TFMPC] - Missing connection for port 'tckcore'.
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2718) [TFMPC] - Missing connection for port 'ntdopinena'.
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2718) [TFMPC] - Missing connection for port 'corectl'.
+# ** Warning: simulation/modelsim/task1.vo(1322): (vopt-2718) [TFMPC] - Missing connection for port 'ntrst'.
+# ** Warning: task1_ag.sv(10): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 14, found 10.
+# ** Warning: task1_ag.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: task1_ag.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: task1_ag.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: task1_ag.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.task1_ag(fast)
+# Loading work.task1(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_io_obuf(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_io_ibuf(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_jtag(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera.dffeas(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__1)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__2)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__3)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__4)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__5)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__6)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__7)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__8)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__9)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__10)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__11)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__12)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__13)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__14)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__15)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__16)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__17)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__18)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__19)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__20)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__21)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__22)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__23)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__24)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__25)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__26)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__27)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__28)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__29)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__30)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__31)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__32)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__33)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__34)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__35)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__36)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__37)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__38)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__39)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__40)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__41)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__42)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__43)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__44)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__45)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__46)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__47)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__48)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__49)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__50)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__51)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__52)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__53)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__54)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__55)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__56)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__57)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__58)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__59)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__60)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__61)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__62)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__63)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__64)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__65)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__66)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__67)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__68)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__69)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__70)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__71)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__72)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__73)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__74)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__75)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__76)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__77)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__78)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__79)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__80)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__81)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__82)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__83)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__84)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__85)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__86)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__87)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__88)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_clkena(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__89)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__90)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__91)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__92)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__93)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__94)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__95)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__96)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__97)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_ram_block(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.generic_m10k(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.altera_lnsim_functions(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_block(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_register(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_register(fast__1)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_register(fast__2)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/altera_lnsim.common_28nm_ram_pulse_generator(fast)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__98)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__99)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__100)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__101)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__102)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__103)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__104)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__105)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__106)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__107)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__108)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__109)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__110)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__111)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__112)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__113)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__114)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__115)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__116)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__117)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__118)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__119)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__120)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__121)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__122)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__123)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__124)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__125)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__126)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__127)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__128)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__129)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__130)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__131)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__132)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__133)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__134)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__135)
+# Loading /ubc/ece/home/gl/grads/carolinew/intelFPGA_lite/19.1/modelsim_ase/altera/verilog/cyclonev.cyclonev_lcell_comb(fast__136)
+# vcd file task1.gate.vcd
+# vcd add -r /task1_ag/dut/*
+# run -all
+# msg: DUT: task1.sv. Expectation: data initialized as expected. Actual:         256/256 matching
+# PASSED at t=1031
+# ** Note: $stop    : task1_ag.sv(63)
+#    Time: 1031 ps  Iteration: 1  Instance: /task1_ag
+# Break at task1_ag.sv line 63
+# Stopped at task1_ag.sv line 63
+# quit
+# End time: 10:25:20 on Nov 17,2020, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 13
