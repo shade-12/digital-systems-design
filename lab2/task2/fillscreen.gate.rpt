@@ -1,0 +1,52 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 16:42:31 on Nov 29,2020
+vlog -l fillscreen.gate-vlog.rpt -sv "+define+AG_NETLIST" "+acc=rnp" fillscreen_ag.sv simulation/modelsim/fillscreen.vo vga-core/rtl_vga_adapter.sv vga-core/syn_vga_adapter.sv 
+-- Compiling module fillscreen_ag
+-- Compiling module fillscreen
+-- Compiling module vga_adapter
+
+Top level modules:
+	fillscreen_ag
+End time: 16:42:31 on Nov 29,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l fillscreen.gate-vsim.rpt -t 1ps -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/cyclonev -c -do "source vga-core/vga_image.tcl;vcd file fillscreen.gate.vcd;vcd add -r /fillscreen_ag/dut/*;run -all;quit" fillscreen_ag 
+# Start time: 16:42:34 on Nov 29,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading sv_std.mti_fli
+# Loading work.fillscreen_ag(fast)
+# Loading work.fillscreen(fast)
+# Loading /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera.dffeas(fast)
+# Loading work.vga_adapter(fast)
+# source vga-core/vga_image.tcl
+# vcd file fillscreen.gate.vcd
+# vcd add -r /fillscreen_ag/dut/*
+# run -all
+# msg: DUT: fillscreen.sv. Expectation: done asserted within       19210 cycles. Actual:      19203
+# PASSED at t=192035
+# msg: DUT: fillscreen.sv. Expectation: pixels match colours on reference drawing, >= 99. Actual:         100
+# PASSED at t=384035
+# ** Note: $stop    : fillscreen_ag.sv(139)
+#    Time: 384035 ps  Iteration: 1  Instance: /fillscreen_ag
+# Break at fillscreen_ag.sv line 139
+# Stopped at fillscreen_ag.sv line 139
+# quit
+# End time: 16:42:40 on Nov 29,2020, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0

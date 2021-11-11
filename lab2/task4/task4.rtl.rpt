@@ -1,0 +1,79 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 16:40:18 on Nov 29,2020
+vlog -l task4.rtl-vlog.rpt -sv "+acc=rnp" task4_ag.sv circle.sv fillscreen.sv reuleaux.sv task4.sv vga-core/rtl_vga_adapter.sv vga-core/syn_vga_adapter.sv 
+-- Compiling module task4_ag
+-- Compiling module circle
+-- Compiling module fillscreen
+-- Compiling module reuleaux
+-- Compiling module task4
+-- Compiling module vga_adapter
+
+Top level modules:
+	task4_ag
+End time: 16:40:18 on Nov 29,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l task4.rtl-vsim.rpt -c -do "source vga-core/vga_image.tcl;vcd file task4.rtl.vcd;vcd add -r /task4_ag/dut/*;run -all;quit" task4_ag 
+# Start time: 16:40:21 on Nov 29,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.task4_ag(fast)
+# Loading work.task4(fast)
+# Loading work.fillscreen(fast)
+# Loading work.reuleaux(fast)
+# Loading work.circle(fast)
+# Loading sv_std.mti_fli
+# Loading work.vga_adapter(fast)
+# Loading work.vga_adapter(fast__1)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (8) for port 'VGA_R'. The port definition is at: vga-core/rtl_vga_adapter.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/VGA File: task4_ag.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (8) for port 'VGA_G'. The port definition is at: vga-core/rtl_vga_adapter.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/VGA File: task4_ag.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (8) for port 'VGA_B'. The port definition is at: vga-core/rtl_vga_adapter.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/VGA File: task4_ag.sv Line: 37
+# source vga-core/vga_image.tcl
+# vcd file task4.rtl.vcd
+# vcd add -r /task4_ag/dut/*
+# run -all
+# wrote test memh and bmp
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 10% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 20% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 30% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 40% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 50% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 60% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 70% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 80% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 100% >= 90% Drawn: 226 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# ** Note: $stop    : task4_ag.sv(129)
+#    Time: 404215 ps  Iteration: 1  Instance: /task4_ag
+# Break at task4_ag.sv line 129
+# Stopped at task4_ag.sv line 129
+# quit
+# End time: 16:40:28 on Nov 29,2020, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 3

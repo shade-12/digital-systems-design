@@ -1,0 +1,138 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 16:39:46 on Nov 29,2020
+vlog -l circle.rtl-vlog.rpt -sv "+acc=rnp" circle_ag.sv circle.sv fillscreen.sv task3.sv vga-core/rtl_vga_adapter.sv vga-core/syn_vga_adapter.sv 
+-- Compiling module circle_ag
+-- Compiling module circle
+-- Compiling module fillscreen
+-- Compiling module task3
+-- Compiling module vga_adapter
+
+Top level modules:
+	circle_ag
+	task3
+End time: 16:39:46 on Nov 29,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l circle.rtl-vsim.rpt -c -do "source vga-core/vga_image.tcl;vcd file circle.rtl.vcd;vcd add -r /circle_ag/dut/*;run -all;quit" circle_ag 
+# Start time: 16:39:48 on Nov 29,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading sv_std.mti_fli
+# Loading work.circle_ag(fast)
+# Loading work.circle(fast)
+# Loading work.vga_adapter(fast)
+# source vga-core/vga_image.tcl
+# vcd file circle.rtl.vcd
+# vcd add -r /circle_ag/dut/*
+# run -all
+# msg: DUT: circle.sv. Test           0. Expectation: done asserted within         970 cycles. Actual:        234
+# PASSED at t=2360
+# wrote test memh and bmp
+# circle_ag0.memh
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 10% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 20% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 30% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 40% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 50% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 60% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 70% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 80% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           0. Expectation: pixels match colours on reference drawing. 100% >= 90% Drawn: 228 Matched: 228/228 +/-1: 0
+# PASSED at t=194360
+# msg: DUT: circle.sv. Test           1. Expectation: done asserted within        1690 cycles. Actual:        402
+# PASSED at t=198400
+# wrote test memh and bmp
+# circle_ag1.memh
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 10% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 20% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 30% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 40% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 50% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 60% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 70% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 80% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           1. Expectation: pixels match colours on reference drawing. 100% >= 90% Drawn: 179 Matched: 179/179 +/-1: 0
+# PASSED at t=390400
+# msg: DUT: circle.sv. Test           2. Expectation: done asserted within         490 cycles. Actual:        122
+# PASSED at t=391640
+# wrote test memh and bmp
+# circle_ag2.memh
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 10% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 20% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 30% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 40% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 50% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 60% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 70% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 80% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           2. Expectation: pixels match colours on reference drawing. 100% >= 90% Drawn: 49 Matched: 49/49 +/-1: 0
+# PASSED at t=583640
+# msg: DUT: circle.sv. Test           3. Expectation: done asserted within         490 cycles. Actual:        122
+# PASSED at t=584880
+# wrote test memh and bmp
+# circle_ag3.memh
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 10% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 20% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 30% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 40% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 50% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 60% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 70% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 80% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# msg: DUT: circle.sv. Test           3. Expectation: pixels match colours on reference drawing. 100% >= 90% Drawn: 47 Matched: 47/47 +/-1: 0
+# PASSED at t=776880
+# ** Note: $stop    : circle_ag.sv(189)
+#    Time: 776880 ps  Iteration: 1  Instance: /circle_ag
+# Break at circle_ag.sv line 189
+# Stopped at circle_ag.sv line 189
+# quit
+# End time: 16:39:54 on Nov 29,2020, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0

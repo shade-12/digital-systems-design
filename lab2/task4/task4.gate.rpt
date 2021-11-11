@@ -1,0 +1,145 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 16:44:18 on Nov 29,2020
+vlog -l task4.gate-vlog.rpt -sv "+define+AG_NETLIST" "+acc=rnp" task4_ag.sv simulation/modelsim/task4.vo vga-core/rtl_vga_adapter.sv vga-core/syn_vga_adapter.sv 
+-- Compiling module task4_ag
+-- Compiling module task4
+-- Compiling module vga_adapter
+
+Top level modules:
+	task4_ag
+End time: 16:44:20 on Nov 29,2020, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l task4.gate-vsim.rpt -t 1ps -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/cyclonev -c -do "source vga-core/vga_image.tcl;vcd file task4.gate.vcd;vcd add -r /task4_ag/dut/*;run -all;quit" task4_ag 
+# Start time: 16:44:22 on Nov 29,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: simulation/modelsim/task4.vo(18539): (vopt-2241) Connection width does not match width of port 'az'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18539): (vopt-2241) Connection width does not match width of port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18539): (vopt-2241) Connection width does not match width of port 'by'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18539): (vopt-2241) Connection width does not match width of port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18539): (vopt-2241) Connection width does not match width of port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18539): (vopt-2241) Connection width does not match width of port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v(38): (vopt-2241) Connection width does not match width of port '<protected>'.<protected>
+# ** Warning: simulation/modelsim/task4.vo(18733): (vopt-2241) Connection width does not match width of port 'az'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18733): (vopt-2241) Connection width does not match width of port 'bx'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18733): (vopt-2241) Connection width does not match width of port 'by'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18733): (vopt-2241) Connection width does not match width of port 'bz'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18733): (vopt-2241) Connection width does not match width of port 'scanin'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# ** Warning: simulation/modelsim/task4.vo(18733): (vopt-2241) Connection width does not match width of port 'chainin'. The port definition is at: /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/mentor/cyclonev_atoms_for_vhdl.v(38).
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.task4_ag(fast)
+# Loading work.task4(fast)
+# Loading /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera.dffeas(fast)
+# Loading sv_std.mti_fli
+# Loading work.vga_adapter(fast)
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult1~8  File: simulation/modelsim/task4.vo Line: 18539
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ax').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3016) Port type is incompatible with connection (port 'ay').
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/dut/\draw|Mult0~8  File: simulation/modelsim/task4.vo Line: 18733
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (8) for port 'VGA_R'. The port definition is at: vga-core/rtl_vga_adapter.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/VGA File: task4_ag.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (8) for port 'VGA_G'. The port definition is at: vga-core/rtl_vga_adapter.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/VGA File: task4_ag.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (8) for port 'VGA_B'. The port definition is at: vga-core/rtl_vga_adapter.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /task4_ag/VGA File: task4_ag.sv Line: 37
+# source vga-core/vga_image.tcl
+# vcd file task4.gate.vcd
+# vcd add -r /task4_ag/dut/*
+# run -all
+# wrote test memh and bmp
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 10% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 20% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 30% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 40% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 50% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 60% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 70% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 80% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# msg: DUT: task4.sv.Expectation: pixels match colours on reference drawing. 99% >= 90% Drawn: 227 Matched: 226/226 +/-1: 0
+# PASSED at t=404215
+# ** Note: $stop    : task4_ag.sv(129)
+#    Time: 404215 ps  Iteration: 1  Instance: /task4_ag
+# Break at task4_ag.sv line 129
+# Stopped at task4_ag.sv line 129
+# quit
+# End time: 16:45:05 on Nov 29,2020, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 47
