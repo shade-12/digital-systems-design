@@ -1,0 +1,81 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 10:34:29 on Dec 04,2020
+vlog -l card7seg.gate-vlog.rpt -sv "+define+AG_NETLIST" "+acc=rnp" card7seg_ag.sv simulation/modelsim/card7seg.vo 
+-- Compiling module card7seg_ag
+-- Compiling module card7seg
+
+Top level modules:
+	card7seg_ag
+End time: 10:34:30 on Dec 04,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l card7seg.gate-vsim.rpt -t 1ps -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/cyclonev -c -do "vcd file card7seg.gate.vcd;vcd add -r /card7seg_ag/dut/*;run -all;quit" card7seg_ag 
+# Start time: 10:34:33 on Dec 04,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.card7seg_ag(fast)
+# Loading work.card7seg(fast)
+# vcd file card7seg.gate.vcd
+# vcd add -r /card7seg_ag/dut/*
+# run -all
+# criteria: Fails HEX0 is not 'b1111111 and the card is 0
+# msg: DUT: card7seg. Input:  0, Expected Output: b1111111, Actual Output: 1111111
+# PASSED at t=5
+# criteria: Fails HEX0 is not 'b0001000 and the card is 1
+# msg: DUT: card7seg. Input:  1, Expected Output: b0001000, Actual Output: 0001000
+# PASSED at t=10
+# criteria: Fails HEX0 is not 'b0100100 and the card is 2
+# msg: DUT: card7seg. Input:  2, Expected Output: b0100100, Actual Output: 0100100
+# PASSED at t=15
+# criteria: Fails HEX0 is not 'b0110000 and the card is 3
+# msg: DUT: card7seg. Input:  3, Expected Output: b0110000, Actual Output: 0110000
+# PASSED at t=20
+# criteria: Fails HEX0 is not 'b0011001 and the card is 4
+# msg: DUT: card7seg. Input:  4, Expected Output: b0011001, Actual Output: 0011001
+# PASSED at t=25
+# criteria: Fails HEX0 is not 'b0010010 and the card is 5
+# msg: DUT: card7seg. Input:  5, Expected Output: b0010010, Actual Output: 0010010
+# PASSED at t=30
+# criteria: Fails HEX0 is not 'b0000010 and the card is 6
+# msg: DUT: card7seg. Input:  6, Expected Output: b0000010, Actual Output: 0000010
+# PASSED at t=35
+# criteria: Fails HEX0 is not ''b1111000 and the card is 7
+# msg: DUT: card7seg. Input:  7, Expected Output: b1111000, Actual Output: 1111000
+# PASSED at t=40
+# criteria: Fails HEX0 is not 'b0000000 and the card is 8
+# msg: DUT: card7seg. Input:  8, Expected Output: b0000000, Actual Output: 0000000
+# PASSED at t=45
+# criteria: Fails HEX0 is not 'b0010000 and the card is 9
+# msg: DUT: card7seg. Input:  9, Expected Output: b0010000, Actual Output: 0010000
+# PASSED at t=50
+# criteria: Fails HEX0 is not 'b1000000 and the card is 10
+# msg: DUT: card7seg. Input: 10, Expected Output: b1000000, Actual Output: 1000000
+# PASSED at t=55
+# criteria: Fails HEX0 is not 'b1100001 and the card is J
+# msg: DUT: card7seg. Input: 11 (J), Expected Output: b1100001, Actual Output: 1100001
+# PASSED at t=60
+# criteria: Fails HEX0 is not 'b0011000 and the card is Q
+# msg: DUT: card7seg. Input: 12 (Q), Expected Output: b0011000, Actual Output: 0011000
+# PASSED at t=65
+# criteria: Fails HEX0 is not 'b0001001 and the card is K
+# msg: DUT: card7seg. Input: 13 (K), Expected Output: b0001001, Actual Output: 0001001
+# PASSED at t=70
+# quit
+# End time: 10:34:37 on Dec 04,2020, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

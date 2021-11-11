@@ -1,0 +1,76 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 10:34:44 on Dec 04,2020
+vlog -l statemachine.gate-vlog.rpt -sv "+define+AG_NETLIST" "+acc=rnp" statemachine_ag.sv simulation/modelsim/statemachine.vo 
+-- Compiling module statemachine_ag
+-- Compiling module statemachine
+
+Top level modules:
+	statemachine_ag
+End time: 10:34:44 on Dec 04,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l statemachine.gate-vsim.rpt -t 1ps -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/cyclonev -c -do "vcd file statemachine.gate.vcd;vcd add -r /statemachine_ag/dut/*;run -all;quit" statemachine_ag 
+# Start time: 10:34:47 on Dec 04,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.statemachine_ag(fast)
+# Loading work.statemachine(fast)
+# Loading /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera.dffeas(fast)
+# vcd file statemachine.gate.vcd
+# vcd add -r /statemachine_ag/dut/*
+# run -all
+# Setup done
+# msg: Fails if load_pcard1 != 1 or not all other outputs are 0.
+# Clocked extra
+# PASSED at t=1018773
+# Setup done
+# msg: Fails if load_pcard1 is not 1 after 0-1 clocks.
+# Clocked extra
+# PASSED at t=2037546
+# Setup done
+# msg: Fails if load_dcard1 != 1 or not all other outputs are 0 after 1-2 clocks.
+# Clocked extra
+# PASSED at t=3085380
+# Setup done
+# msg: Fails if load_dcard1 != 1 after 1-2 clocks.
+# Clocked extra
+# PASSED at t=4133214
+# Setup done
+# msg: Fails if load_pcard2 != 1 or not all other outputs are 0, after 2-3 clocks.
+# Clocked extra
+# PASSED at t=6118931
+# Setup done
+# msg: fails if load_pcard2 != 1 after 2-3 clocks.
+# Clocked extra
+# PASSED at t=8104648
+# Setup done
+# msg: Fails if load_dcard2 != 1 or not all other outputs are 0, after 3-4 clocks.
+# Clocked extra
+# PASSED at t=9653315
+# Setup done
+# msg: Fails if load_dcard2 != 1 after 3-4 clocks.
+# Clocked extra
+# PASSED at t=11201982
+# ** Note: $stop    : statemachine_ag.sv(187)
+#    Time: 11201982 ps  Iteration: 0  Instance: /statemachine_ag
+# Break at statemachine_ag.sv line 187
+# Stopped at statemachine_ag.sv line 187
+# quit
+# End time: 10:34:51 on Dec 04,2020, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

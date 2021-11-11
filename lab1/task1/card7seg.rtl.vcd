@@ -1,0 +1,131 @@
+$date
+	Fri Dec  4 08:25:47 2020
+$end
+$version
+	ModelSim Version 10.7c
+$end
+$timescale
+	1ps
+$end
+
+$scope module card7seg_ag $end
+
+$scope module dut $end
+$var wire 1 ! SW [3] $end
+$var wire 1 " SW [2] $end
+$var wire 1 # SW [1] $end
+$var wire 1 $ SW [0] $end
+$var wire 1 % HEX0 [6] $end
+$var wire 1 & HEX0 [5] $end
+$var wire 1 ' HEX0 [4] $end
+$var wire 1 ( HEX0 [3] $end
+$var wire 1 ) HEX0 [2] $end
+$var wire 1 * HEX0 [1] $end
+$var wire 1 + HEX0 [0] $end
+$var reg 7 , led [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111111 ,
+1+
+1*
+1)
+1(
+1'
+1&
+1%
+0$
+0#
+0"
+0!
+$end
+#5
+1$
+b1000 ,
+0+
+0*
+0)
+0'
+0&
+0%
+#10
+0$
+1#
+b100100 ,
+1)
+0(
+1&
+#15
+1$
+b110000 ,
+0)
+1'
+#20
+0$
+0#
+1"
+b11001 ,
+1+
+1(
+0&
+#25
+1$
+b10010 ,
+0+
+1*
+0(
+#30
+0$
+1#
+b10 ,
+0'
+#35
+1$
+b1111000 ,
+0*
+1(
+1'
+1&
+1%
+#40
+0$
+0#
+0"
+1!
+b0 ,
+0(
+0'
+0&
+0%
+#45
+1$
+b10000 ,
+1'
+#50
+0$
+1#
+b1000000 ,
+0'
+1%
+#55
+1$
+b1100001 ,
+1+
+1&
+#60
+0$
+0#
+1"
+b11000 ,
+0+
+1(
+1'
+0&
+0%
+#65
+1$
+b1001 ,
+1+
+0'

@@ -1,0 +1,119 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 08:26:06 on Dec 04,2020
+vlog -l statemachine.rtl-vlog.rpt -sv "+acc=rnp" statemachine_ag.sv card7seg.sv datapath.sv dealcard.sv mod10.sv reg4.sv scorehand.sv statemachine.sv task5.sv 
+-- Compiling module statemachine_ag
+-- Compiling module card7seg
+-- Compiling module datapath
+-- Compiling module dealcard
+-- Compiling module mod10
+-- Compiling module reg4
+-- Compiling module scorehand
+-- Compiling module statemachine
+-- Compiling module vDFF
+-- Compiling module task5
+
+Top level modules:
+	statemachine_ag
+	task5
+End time: 08:26:06 on Dec 04,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l statemachine.rtl-vsim.rpt -c -do "vcd file statemachine.rtl.vcd;vcd add -r /statemachine_ag/dut/*;run -all;quit" statemachine_ag 
+# Start time: 08:26:08 on Dec 04,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.statemachine_ag(fast)
+# Loading work.statemachine(fast)
+# Loading work.vDFF(fast)
+# vcd file statemachine.rtl.vcd
+# vcd add -r /statemachine_ag/dut/*
+# run -all
+# ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
+# for multiple files.
+#    Time: 0 ps  Iteration: 0  Process: /statemachine_ag/#INITIAL#86 File: statemachine_ag.sv Line: 86
+# Setup done
+# msg: Fails if load_pcard1 not equal 1 and all other outputs are 0.
+# PASSED at t=960623
+# Setup done
+# msg: Fails if load_pcard1 is not 1 after 0-1 clocks.
+# PASSED at t=1921246
+# Setup done
+# msg: Fails if load_dcard1 not equal 1 and all other outputs are 0 after 1-2 clocks.
+# PASSED at t=2910930
+# Setup done
+# msg: Fails if load_dcard1 is not 1 after 1-2 clocks.
+# PASSED at t=3900614
+# Setup done
+# msg: Fails if load_pcard2 not equal 1 and all other outputs are after 2-3 clocks.
+# PASSED at t=5828181
+# Setup done
+# msg: fails if load_pcard2 is not 1 after 2-3 clocks.
+# PASSED at t=7755748
+# Setup done
+# msg: Fails if load_dcard2 not equal 1 and all other outputs are 0, after 3-4 clocks.
+# PASSED at t=9246265
+# Setup done
+# msg: Fails if load_dcard2 is not 1 after 3-4 clocks.
+# PASSED at t=10736782
+# Setup done
+# msg: Fails if player_win_light is not 1 when pscore = 8 and dscore = 9, all other signals must be 0, after 4-6 clocks.
+# PASSED at t=11980973
+# Setup done
+# msg: Fails if player_win_light is not 1 when pscore = 8 and dscore = 9, after 4-6 clocks.
+# PASSED at t=13225164
+# Setup done
+# msg: Fails if player_win_light is not 1 when pscore = 9 and dscore = 8 after 4-6 clocks.
+# PASSED at t=14469355
+# Setup done
+# msg: Fails if both win lights are not 1 after 4-6 clocks and dscore = pscore = 8, after 4-5 clocks.
+# PASSED at t=15713546
+# Setup done
+# msg: Fails if load_pcard3 is not 1 when the clock has been toggled 4-6 times and the pscore is 5 and the dscore is 7
+# PASSED at t=16957737
+# Setup done
+# msg: Fails if load_dcard3 is not 1 when the clock has been toggled 4-7 times and the pscore is 5 and the dscore is 4, and the player gets a 2.
+# PASSED at t=18344069
+# Setup done
+# msg: Fails if dealer_win_light is not 1 when the clock has been toggled 4-8 times and the pscore is 5 and the dscore is 4, and the player gets a 2, and dealer gets a 4.
+# PASSED at t=19872542
+# Setup done
+# msg: Fails if player_win_light is not 1 when the clock has been toggled 4-8 times and the pscore is 5 and the dscore is 4, and the player gets a 2, and dealer gets a 2.
+# PASSED at t=21439862
+# Setup done
+# msg: Fails if player_win_light is not 1 when the clock has been toggled 4-8 times and the pscore is 5 and the dscore is 5, and the player gets a 2. 
+# PASSED at t=22922991
+# Setup done
+# msg: Fails if load_dcard3 is not 1 when the clock has been toggled 4-6 times and the pscore is 6 and the dscore is 5
+# PASSED at t=24167182
+# Setup done
+# msg: Fails if dealer_win_light is not 1 when the clock has been toggled 4-7 times and the pscore is 6 and the dscore is 7 after dcard3.
+# PASSED at t=25553514
+# Setup done
+# msg: Fails if player_win_light is not 1 when the clock has been toggled 4-5 times and the pscore is 6 and the dscore is 5 after dcard3.
+# PASSED at t=26939846
+# Setup done
+# msg: Fails if player_win_light and dealer_win_light is not 1 when the clock has been toggled 4-5 times and the pscore is 6 and the dscore is 6    after dcard3.
+# PASSED at t=28326178
+# ** Note: $stop    : statemachine_ag.sv(609)
+#    Time: 28326178 ps  Iteration: 0  Instance: /statemachine_ag
+# Break at statemachine_ag.sv line 609
+# Stopped at statemachine_ag.sv line 609
+# quit
+# End time: 08:26:11 on Dec 04,2020, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

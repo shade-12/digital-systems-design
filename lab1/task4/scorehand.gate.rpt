@@ -1,0 +1,72 @@
+Model Technology ModelSim SE-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+Start time: 10:34:38 on Dec 04,2020
+vlog -l scorehand.gate-vlog.rpt -sv "+define+AG_NETLIST" "+acc=rnp" scorehand_ag.sv simulation/modelsim/scorehand.vo 
+-- Compiling module scorehand_ag
+-- Compiling module scorehand
+
+Top level modules:
+	scorehand_ag
+End time: 10:34:38 on Dec 04,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -l scorehand.gate-vsim.rpt -t 1ps -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/altera -L /CMC/tools/altera/17.0/modelsim_ase/altera/verilog/cyclonev -c -do "vcd file scorehand.gate.vcd;vcd add -r /scorehand_ag/dut/*;run -all;quit" scorehand_ag 
+# Start time: 10:34:41 on Dec 04,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.7c Aug 17 2018Linux 3.10.0-957.27.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.scorehand_ag(fast)
+# Loading work.scorehand(fast)
+# vcd file scorehand.gate.vcd
+# vcd add -r /scorehand_ag/dut/*
+# run -all
+# criteria: fails for {card1,card2} = { 0  0} and score is not  0
+# msg: DUT: scorehand. Input: { 0  0}, Expected Output:  0, Actual Output:  0
+# PASSED at t=5
+# criteria: fails for {card1,card2} = { 2  0} and score is not  2
+# msg: DUT: scorehand. Input: { 2  0}, Expected Output:  2, Actual Output:  2
+# PASSED at t=10
+# criteria: fails for {card1,card2} = { 5  0} and score is not  5
+# msg: DUT: scorehand. Input: { 5  0}, Expected Output:  5, Actual Output:  5
+# PASSED at t=15
+# criteria: fails for {card1,card2} = { 6  0} and score is not  6
+# msg: DUT: scorehand. Input: { 6  0}, Expected Output:  6, Actual Output:  6
+# PASSED at t=20
+# criteria: fails for {card1,card2} = {10  0} and score is not  0
+# msg: DUT: scorehand. Input: {10  0}, Expected Output:  0, Actual Output:  0
+# PASSED at t=25
+# criteria: fails for {card1,card2} = {10  3} and score is not  3
+# msg: DUT: scorehand. Input: {10  3}, Expected Output:  3, Actual Output:  3
+# PASSED at t=30
+# criteria: fails for {card1,card2} = {10  6} and score is not  6
+# msg: DUT: scorehand. Input: {10  6}, Expected Output:  6, Actual Output:  6
+# PASSED at t=35
+# criteria: fails for {card1,card2} = {10  9} and score is not  9
+# msg: DUT: scorehand. Input: {10  9}, Expected Output:  9, Actual Output:  9
+# PASSED at t=40
+# criteria: fails for {card1,card2} = {10 12} and score is not  0
+# msg: DUT: scorehand. Input: {10 12}, Expected Output:  0, Actual Output:  0
+# PASSED at t=45
+# criteria: fails for {card1,card2} = { 2  5} and score is not  7
+# msg: DUT: scorehand. Input: { 2  5}, Expected Output:  7, Actual Output:  7
+# PASSED at t=50
+# criteria: fails for {card1,card2} = {12  7} and score is not  7
+# msg: DUT: scorehand. Input: {12  7}, Expected Output:  7, Actual Output:  7
+# PASSED at t=55
+# quit
+# End time: 10:34:43 on Dec 04,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
